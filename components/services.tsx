@@ -21,7 +21,7 @@ export function Services() {
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Wismath AI - Large Card (spans 2 columns) */}
-          <a href="https://wismath.work" target="_blank" rel="noopener noreferrer" className="md:col-span-2 group relative bg-paper rounded-3xl p-8 md:p-10 border border-sage hover:border-gold/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-gold/5 cursor-pointer overflow-hidden block">
+          <a href="https://www.wismath.work" target="_blank" rel="noopener noreferrer" className="md:col-span-2 group relative bg-paper rounded-3xl p-8 md:p-10 border border-sage hover:border-gold/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-gold/5 cursor-pointer overflow-hidden block">
             {/* Abstract Data Stream Visual */}
             <div className="absolute top-0 right-0 w-64 h-64 opacity-10 pointer-events-none">
               <svg viewBox="0 0 200 200" className="w-full h-full">

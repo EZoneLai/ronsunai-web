@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const footerLinks = {
   services: [
-    { name: "Wismath AI", href: "https://wismath.work" },
+    { name: "Wismath AI", href: "https://www.wismath.work" },
     { name: "養生貿易", href: "#" },
     { name: "ESG 顧問", href: "#" },
   ],
