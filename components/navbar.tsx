@@ -31,16 +31,16 @@ export function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <a href="#philosophy" className="text-sm text-ink/70 hover:text-ink transition-colors">
-              Philosophy
+              品牌哲學
             </a>
             <a href="#services" className="text-sm text-ink/70 hover:text-ink transition-colors">
-              Services
+              服務項目
             </a>
             <a href="#founder" className="text-sm text-ink/70 hover:text-ink transition-colors">
-              About
+              關於我們
             </a>
             <Button className="rounded-full bg-ink text-paper hover:bg-ink/90 px-6">
-              Contact
+              聯絡我們
             </Button>
           </div>
 
@@ -64,24 +64,24 @@ export function Navbar() {
                 className="text-sm text-ink/70 hover:text-ink transition-colors px-2 py-2"
                 onClick={() => setIsOpen(false)}
               >
-                Philosophy
+                品牌哲學
               </a>
               <a 
                 href="#services" 
                 className="text-sm text-ink/70 hover:text-ink transition-colors px-2 py-2"
                 onClick={() => setIsOpen(false)}
               >
-                Services
+                服務項目
               </a>
               <a 
                 href="#founder" 
                 className="text-sm text-ink/70 hover:text-ink transition-colors px-2 py-2"
                 onClick={() => setIsOpen(false)}
               >
-                About
+                關於我們
               </a>
               <Button className="rounded-full bg-ink text-paper hover:bg-ink/90 w-full mt-2">
-                Contact
+                聯絡我們
               </Button>
             </div>
           </div>

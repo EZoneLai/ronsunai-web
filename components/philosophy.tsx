@@ -5,23 +5,23 @@ import { Circle, Mountain, Sun } from "lucide-react"
 const philosophyItems = [
   {
     icon: Circle,
-    title: "The Bowl",
-    subtitle: "Inclusivity",
-    description: "ESG & Governance — embracing all stakeholders in a vessel of shared values and sustainable practice.",
+    title: "容（茶碗）",
+    subtitle: "大器包容",
+    description: "我們像一只茶碗，透過 ESG 與管理顧問，為企業打造穩固的治理容器，承載責任與長遠的繁榮。",
     color: "text-gold",
   },
   {
     icon: Mountain,
-    title: "The Mountain",
-    subtitle: "Foundation",
-    description: "Wellness & Trade — grounded in ancient traditions of Puer tea and mindful commerce.",
+    title: "山（高山）",
+    subtitle: "連結大地",
+    description: "我們像巍峨高山，透過瑜伽、健身與茶葉貿易，強化人們的肉身健康，將純淨的能量帶入日常生活。",
     color: "text-ink",
   },
   {
     icon: Sun,
-    title: "The Sun",
-    subtitle: "Wisdom",
-    description: "AI & Numerology — illuminating paths forward through data-driven insight and timeless patterns.",
+    title: "晟（旭日）",
+    subtitle: "智慧指引",
+    description: "我們像初升旭日，透過 AI 智慧術數、密吟與系統架構設計，以科技之光驅散迷霧，為決策提供清晰的方向。",
     color: "text-gold",
   },
 ]
@@ -32,12 +32,12 @@ export function Philosophy() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16 md:mb-20">
-          <p className="text-sm tracking-widest uppercase text-gold mb-4">Our Philosophy</p>
+          <p className="text-sm tracking-widest uppercase text-gold mb-4">我們的哲學</p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-ink text-balance">
-            The Brand Totem
+            容納萬物，日晟於山
           </h2>
           <p className="mt-4 text-ink/60 text-lg leading-relaxed">
-            Three symbols unite to form our identity — each representing a pillar of balance between tradition and innovation.
+            容晟 (Ronsun) 的精神，源自於一個微縮的宇宙圖騰。
           </p>
         </div>
 

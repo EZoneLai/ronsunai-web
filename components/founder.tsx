@@ -44,13 +44,17 @@ export function Founder() {
               
               {/* Quote Text */}
               <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl text-ink leading-relaxed text-pretty">
-                We empower the future by grounding in the past.
+                科技讓我們走得更快，而智慧讓我們走得更遠。
               </blockquote>
+              
+              <p className="mt-6 text-ink/70 text-lg leading-relaxed">
+                我是一名工程師，也是一位茶人；我研究大數據，也鑽研古老易經。這看似矛盾，實則一體。容晟科技的存在，是為了在混亂的時代中，提供一套完整的「生命解決方案」。無論是透過程式碼、一杯茶，還是一份 ESG 報告，我們都在協助您提升頻率，回到身心與事業的完美平衡。
+              </p>
 
               {/* Attribution */}
               <div className="mt-8 pt-8 border-t border-sage">
-                <p className="font-serif text-xl text-ink">Eugene Lai</p>
-                <p className="text-ink/60 mt-1">Founder & CEO, RonsunAI</p>
+                <p className="font-serif text-xl text-ink">賴宥均 Eugene Lai</p>
+                <p className="text-ink/60 mt-1">創辦人暨執行長</p>
               </div>
 
               {/* Decorative Line */}

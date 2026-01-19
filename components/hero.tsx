@@ -48,12 +48,12 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-ink leading-tight text-balance">
-          Ancient Wisdom for the Soul,{" "}
-          <span className="block mt-2">Future Tech for the World.</span>
+          以古老智慧定心，{" "}
+          <span className="block mt-2">用未來科技賦能。</span>
         </h1>
         
         <p className="mt-6 md:mt-8 text-lg md:text-xl text-ink/70 max-w-2xl mx-auto leading-relaxed text-pretty">
-          From AI-driven decisions to sustainable trade. RonsunAI is your vessel for balance.
+          從 AI 決策、身心健康貿易到 ESG 永續治理，容晟致力於構建一個生生不息的商業善循環。
         </p>
 
         <div className="mt-8 md:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -61,7 +61,7 @@ export function Hero() {
             size="lg"
             className="rounded-full bg-ink text-paper hover:bg-ink/90 px-8 py-6 text-base font-medium group"
           >
-            Explore Ecosystem
+            探索我們的生態系
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
           <Button 
@@ -69,14 +69,14 @@ export function Hero() {
             size="lg"
             className="rounded-full border-ink/20 text-ink hover:bg-ink/5 px-8 py-6 text-base font-medium bg-transparent"
           >
-            Learn More
+            了解更多
           </Button>
         </div>
       </div>
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-ink/40">
-        <span className="text-xs tracking-widest uppercase">Scroll</span>
+        <span className="text-xs tracking-widest uppercase">向下滾動</span>
         <div className="w-px h-8 bg-gradient-to-b from-ink/40 to-transparent" />
       </div>
     </section>

@@ -5,18 +5,18 @@ import Image from "next/image"
 const footerLinks = {
   services: [
     { name: "Wismath AI", href: "#" },
-    { name: "Wellness Trade", href: "#" },
-    { name: "ESG Consulting", href: "#" },
+    { name: "養生貿易", href: "#" },
+    { name: "ESG 顧問", href: "#" },
   ],
   company: [
-    { name: "About Us", href: "#" },
-    { name: "Our Philosophy", href: "#philosophy" },
-    { name: "Contact", href: "#" },
+    { name: "關於我們", href: "#" },
+    { name: "我們的哲學", href: "#philosophy" },
+    { name: "聯絡我們", href: "#" },
   ],
   legal: [
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms of Service", href: "#" },
-    { name: "Refund Policy", href: "#" },
+    { name: "隱私權政策", href: "#" },
+    { name: "服務條款", href: "#" },
+    { name: "退款政策", href: "#" },
   ],
 }
 
@@ -42,7 +42,7 @@ export function Footer() {
               </span>
             </a>
             <p className="text-paper/60 max-w-sm leading-relaxed">
-              Bridging ancient wisdom with future technology. We create harmonious solutions for a balanced world.
+              整合東方智慧與西方科技，我們是您的生命策略夥伴。
             </p>
             <div className="mt-6 flex items-center gap-4">
               {/* Social Links - keeping minimal */}
@@ -70,7 +70,7 @@ export function Footer() {
           {/* Services Column */}
           <div>
             <h4 className="text-sm font-medium text-paper tracking-wide uppercase mb-4">
-              Services
+              服務
             </h4>
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
@@ -89,7 +89,7 @@ export function Footer() {
           {/* Company Column */}
           <div>
             <h4 className="text-sm font-medium text-paper tracking-wide uppercase mb-4">
-              Company
+              公司
             </h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
@@ -108,7 +108,7 @@ export function Footer() {
           {/* Legal Column */}
           <div>
             <h4 className="text-sm font-medium text-paper tracking-wide uppercase mb-4">
-              Legal
+              法律
             </h4>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
@@ -129,17 +129,17 @@ export function Footer() {
         <div className="mt-16 pt-8 border-t border-paper/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-paper/40 text-sm">
-              © 2026 Ronsun Technology Co., Ltd. All rights reserved.
+              © 2026 容晟科技有限公司 (Ronsun Technology Co., Ltd.) 版權所有
             </p>
             <div className="flex items-center gap-6">
               <a href="#" className="text-paper/40 hover:text-gold transition-colors text-sm">
-                Privacy Policy
+                隱私權政策
               </a>
               <a href="#" className="text-paper/40 hover:text-gold transition-colors text-sm">
-                Terms of Service
+                服務條款
               </a>
               <a href="#" className="text-paper/40 hover:text-gold transition-colors text-sm">
-                Refund Policy
+                退款政策
               </a>
             </div>
           </div>
