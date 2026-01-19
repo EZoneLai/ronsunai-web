@@ -1,6 +1,7 @@
 "use client"
 
 import { Quote } from "lucide-react"
+import Image from "next/image"
 
 export function Founder() {
   return (
@@ -16,16 +17,14 @@ export function Founder() {
               
               {/* Image Container */}
               <div className="relative w-full h-full rounded-2xl bg-sage/30 overflow-hidden">
-                {/* Placeholder silhouette */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <svg 
-                    viewBox="0 0 200 250" 
-                    className="w-3/4 h-3/4 opacity-20"
-                  >
-                    <ellipse cx="100" cy="70" rx="45" ry="55" fill="#1A1A1A" />
-                    <ellipse cx="100" cy="200" rx="70" ry="80" fill="#1A1A1A" />
-                  </svg>
-                </div>
+                <Image 
+                  src="/eugene_photo.jpg" 
+                  alt="賴宥均 Eugene Lai - 創辦人暨執行長" 
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority
+                />
                 
                 {/* Subtle texture overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-paper/20 to-transparent" />
