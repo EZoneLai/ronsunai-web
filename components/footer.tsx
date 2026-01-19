@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const footerLinks = {
   services: [
-    { name: "Wismath AI", href: "#" },
+    { name: "Wismath AI", href: "https://wismath.work" },
     { name: "養生貿易", href: "#" },
     { name: "ESG 顧問", href: "#" },
   ],
@@ -78,6 +78,8 @@ export function Footer() {
                   <a 
                     href={link.href} 
                     className="text-paper/60 hover:text-gold transition-colors text-sm"
+                    target={link.href.startsWith('http') ? '_blank' : undefined}
+                    rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                   >
                     {link.name}
                   </a>
