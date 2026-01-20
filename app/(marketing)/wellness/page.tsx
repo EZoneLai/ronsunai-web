@@ -23,7 +23,7 @@ export default function WellnessPage() {
           台灣風土，歲月陳韻 <br/>
           <span className="text-2xl md:text-3xl mt-4 block font-light text-gray-500">Taiwan's Terroir & Vintage Puer</span>
         </h1>
-        <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-10">
+        <p className="text-lg md:text-xl text-gray-700 leading-[1.8] max-w-3xl mx-auto mb-10">
           我們深信，<strong>台灣擁有世界上最好的烏龍茶與紅茶工藝</strong>，這是島嶼的驕傲。
           同時，我們遍尋雲南深山，只為您帶回<strong> 20 年以上的真正精品普洱</strong>。
           <br className="hidden md:block" />
@@ -32,7 +32,7 @@ export default function WellnessPage() {
       </section>
 
       {/* 1. Taiwan Tea Section (台灣好茶) */}
-      <section className="px-6 py-20 bg-white">
+      <section className="px-6 py-24 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-4 mb-12">
             <div className="p-3 bg-[#E2E8F0] rounded-full">
@@ -52,7 +52,7 @@ export default function WellnessPage() {
                 <span className="text-[#C59D5F] font-bold">NT$ 550 <span className="text-xs text-gray-400">/ 150g</span></span>
               </div>
               <p className="text-sm text-gray-600 mb-3 italic">"High Mountain Qi, Creamy Texture"</p>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <p className="text-gray-700 text-base leading-[1.8]">
                 來自海拔 1000 公尺以上的雲霧帶。茶湯金黃透亮，帶有獨特的山頭氣與蘭花香。
                 入口甘醇滑順，是台灣高山茶的經典代表，展現了這座島嶼得天獨厚的風土。
               </p>
@@ -65,7 +65,7 @@ export default function WellnessPage() {
                 <span className="text-[#C59D5F] font-bold">NT$ 1,650 <span className="text-xs text-gray-400">/ 75g</span></span>
               </div>
               <p className="text-sm text-gray-600 mb-3 italic">"Cinnamon, Mint, Natural Honey"</p>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <p className="text-gray-700 text-base leading-[1.8]">
                 台灣特有品種台茶 18 號。經小綠葉蟬吸食（著蜒）後，轉化出天然的蜜香、肉桂香與淡淡薄荷感。
                 這款茶證明了台灣紅茶足以驚艷世界，口感層次豐富，久泡不澀。
               </p>
@@ -78,7 +78,7 @@ export default function WellnessPage() {
                 <span className="text-[#C59D5F] font-bold">NT$ 1,500 <span className="text-xs text-gray-400">/ 150g</span></span>
               </div>
               <p className="text-sm text-gray-600 mb-3 italic">"Rich Honey Aroma, Fruity Notes"</p>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <p className="text-gray-700 text-base leading-[1.8]">
                 結合了東方美人的蜜香與凍頂烏龍的甘醇。重發酵工藝帶出熟果香氣，
                 茶湯呈現琥珀色，口感溫潤如玉，是台灣製茶工藝的極致展現。
               </p>
@@ -91,7 +91,7 @@ export default function WellnessPage() {
                 <span className="text-[#C59D5F] font-bold">NT$ 550 <span className="text-xs text-gray-400">/ 75g</span></span>
               </div>
               <p className="text-sm text-gray-600 mb-3 italic">"Charcoal Roast, Deep Sweetness"</p>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <p className="text-gray-700 text-base leading-[1.8]">
                 遵循古法，使用龍眼木炭慢火烘焙。去除了茶葉的生青氣，
                 轉化為沉穩的焙火香與特殊的焦糖甜韻，暖胃且耐泡。
               </p>
@@ -101,7 +101,7 @@ export default function WellnessPage() {
       </section>
 
       {/* 2. Vintage Puer Section (雲南陳普) */}
-      <section className="px-6 py-20 bg-[#1A1A1A] text-gray-300">
+      <section className="px-6 py-24 bg-[#1A1A1A] text-gray-300">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-4 mb-12">
             <div className="p-3 bg-[#C59D5F] rounded-full">
@@ -131,7 +131,7 @@ export default function WellnessPage() {
                   <tr className="group hover:bg-white/5 transition-colors">
                     <td className="py-6 pl-4 font-serif text-lg text-white">1980 班禪景茶 (Panchen)</td>
                     <td className="py-6 text-[#C59D5F]">生沱 (Raw)</td>
-                    <td className="py-6 text-sm max-w-md leading-relaxed">
+                    <td className="py-6 text-base max-w-md leading-[1.8] text-gray-200">
                       稀世珍品。歷經 40 多年轉化，茶氣強勁而內斂，帶有獨特的藥香與參香。
                       這是喝一泡少一泡的歷史液體，展現了時間最完美的陳化工藝。
                     </td>
@@ -142,7 +142,7 @@ export default function WellnessPage() {
                   <tr className="group hover:bg-white/5 transition-colors">
                     <td className="py-6 pl-4 font-serif text-lg text-white">2005 永德大樹沱 (Yongde)</td>
                     <td className="py-6 text-[#C59D5F]">生沱 (Raw)</td>
-                    <td className="py-6 text-sm max-w-md leading-relaxed">
+                    <td className="py-6 text-base max-w-md leading-[1.8] text-gray-200">
                       選用永德茶區大樹茶菁。20 年陳期使其褪去苦澀，轉出梅子韻與木質香。
                       茶湯橙紅透亮，入口生津，是感受中期老生茶的最佳入門款。
                     </td>
@@ -153,7 +153,7 @@ export default function WellnessPage() {
                   <tr className="group hover:bg-white/5 transition-colors">
                     <td className="py-6 pl-4 font-serif text-lg text-white">2000 雲南江城圓茶 (Jiangcheng)</td>
                     <td className="py-6 text-[#C59D5F]">生餅 (Raw)</td>
-                    <td className="py-6 text-sm max-w-md leading-relaxed">
+                    <td className="py-6 text-base max-w-md leading-[1.8] text-gray-200">
                       經典江城春尖料。乾倉存放，香氣純正高揚，水路細膩。
                       展現了易武茶區特有的柔美與豐富膠質，回甘持久。
                     </td>
@@ -164,7 +164,7 @@ export default function WellnessPage() {
                   <tr className="group hover:bg-white/5 transition-colors">
                     <td className="py-6 pl-4 font-serif text-lg text-white">2000/2002 7581 熟磚 (7581 Brick)</td>
                     <td className="py-6 text-[#C59D5F]">熟磚 (Ripe)</td>
-                    <td className="py-6 text-sm max-w-md leading-relaxed">
+                    <td className="py-6 text-base max-w-md leading-[1.8] text-gray-200">
                       崑明茶廠經典配方。棗香濃郁，口感滑糯醇厚，毫無堆味。
                       經過 20 多年轉化，茶性溫和溫潤，最適合暖胃養生。
                     </td>
@@ -174,7 +174,7 @@ export default function WellnessPage() {
                    <tr className="group hover:bg-white/5 transition-colors">
                     <td className="py-6 pl-4 font-serif text-lg text-white">1997 景谷磚 (Jinggu Brick)</td>
                     <td className="py-6 text-[#C59D5F]">熟磚 (Ripe)</td>
-                    <td className="py-6 text-sm max-w-md leading-relaxed">
+                    <td className="py-6 text-base max-w-md leading-[1.8] text-gray-200">
                        近 30 年老熟茶。陳香顯著，湯色如紅酒般深邃通透。
                        入口即化，帶有老木頭的沈穩香氣，是行家收藏級的日常口糧。
                     </td>
@@ -189,7 +189,7 @@ export default function WellnessPage() {
       </section>
 
       {/* 3. Services Section (體驗課程) */}
-      <section className="px-6 py-20 bg-[#F9F8F4]">
+      <section className="px-6 py-24 bg-[#F9F8F4]">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-serif font-bold mb-12">Immersive Tea Experiences <br/><span className="text-lg text-gray-500 font-sans font-normal">從味覺到靈魂的探索</span></h2>
           
@@ -202,7 +202,7 @@ export default function WellnessPage() {
               <h3 className="text-xl font-bold mb-1">茶味品評</h3>
               <p className="text-xs text-gray-400 mb-3 uppercase tracking-wide">Sensory Awakening</p>
               <div className="text-2xl font-serif text-[#C59D5F] font-bold mb-4">NT$ 680</div>
-              <p className="text-sm text-gray-600">
+              <p className="text-base text-gray-700 leading-[1.8]">
                 系統化引導，打開味蕾頻率。學習拆解茶湯層次，建立個人的品味數據庫。
               </p>
             </div>
@@ -215,7 +215,7 @@ export default function WellnessPage() {
               <h3 className="text-xl font-bold mb-1">茶香調酒體驗</h3>
               <p className="text-xs text-gray-400 mb-3 uppercase tracking-wide">Tea Mixology</p>
               <div className="text-2xl font-serif text-[#C59D5F] font-bold mb-4">NT$ 780</div>
-              <p className="text-sm text-gray-600">
+              <p className="text-base text-gray-700 leading-[1.8]">
                 「從味覺到調酒，由茶開啟」。包含兩杯特調茶酒，在微醺中探索東方茶韻與西方基酒的邊界。
               </p>
             </div>
@@ -228,7 +228,7 @@ export default function WellnessPage() {
               <h3 className="text-xl font-bold mb-1">茶參數測試</h3>
               <p className="text-xs text-gray-400 mb-3 uppercase tracking-wide">Precision Brewing</p>
               <div className="text-2xl font-serif text-[#C59D5F] font-bold mb-4">NT$ 1,660</div>
-              <p className="text-sm text-gray-600">
+              <p className="text-base text-gray-700 leading-[1.8]">
                 協助測試並規劃最佳沖泡參數。透過實驗與數據，找出每一款茶葉釋放能量的黃金比例。
               </p>
             </div>
@@ -241,7 +241,7 @@ export default function WellnessPage() {
               <h3 className="text-xl font-bold mb-1">私人識茶</h3>
               <p className="text-xs text-gray-400 mb-3 uppercase tracking-wide">Private Session</p>
               <div className="text-2xl font-serif text-[#C59D5F] font-bold mb-4">NT$ 663</div>
-              <p className="text-sm text-gray-600">
+              <p className="text-base text-gray-700 leading-[1.8]">
                 針對店內現有茶款的深度對話。這不是上課，而是一場關於味覺的諮詢，找到您的命定之茶。
               </p>
             </div>
@@ -251,13 +251,13 @@ export default function WellnessPage() {
       </section>
 
       {/* Gift Sets (Tea Bags) - Link to Contact */}
-      <section className="px-6 py-20 max-w-5xl mx-auto">
+      <section className="px-6 py-24 max-w-5xl mx-auto">
         <div className="bg-[#1A1A1A] text-white rounded-[3rem] p-12 text-center relative overflow-hidden">
           {/* Decorative background circle */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#C59D5F] rounded-full blur-[100px] opacity-20 -translate-y-1/2 translate-x-1/2"></div>
           
           <h2 className="text-3xl font-serif font-bold mb-6 relative z-10">Chromatic Tea Series (色韻茶包)</h2>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto relative z-10 text-lg">
+          <p className="text-gray-300 mb-8 max-w-2xl mx-auto relative z-10 text-lg leading-[1.8]">
             四色，四韻。將台灣山林的精華濃縮於此。<br/>
             熟香包種 (綠) • 阿里山烏龍 (銀) • 蜜香貴妃 (白) • 紅玉紅茶 (紅)
           </p>
@@ -272,14 +272,14 @@ export default function WellnessPage() {
       </section>
 
       {/* Signature Mini Cakes (Best Sellers) - UPDATED WITH EXTERNAL LINKS */}
-      <section className="px-6 py-20 bg-white">
+      <section className="px-6 py-24 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-1 border border-[#C59D5F] text-[#C59D5F] rounded-full text-xs font-bold mb-6 tracking-wide">
                <Star className="w-3 h-3 fill-current" /> BEST SELLERS
             </div>
             <h2 className="text-3xl font-serif font-bold mb-4">Signature Ancient Tree Mini Cakes <br/> <span className="text-2xl text-gray-500 font-sans font-normal">龍年限定古樹小茶餅</span></h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto leading-[1.8]">
               來自雲南 1900 公尺高山，一餅一泡，鎖住新鮮。無論是 150 年古樹生茶的清甜，還是近百年熟茶的醇厚，都是現代生活的優雅儀式。
             </p>
           </div>
@@ -309,7 +309,7 @@ export default function WellnessPage() {
                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded-full ml-2">10入 / 包</span>
                  </div>
 
-                 <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                 <p className="text-gray-700 text-base mb-4 leading-[1.8]">
                    採自海拔 1,900 公尺古茶區。梅子香氣開場，轉為水蜜桃甜韻。喉韻清爽，耐泡 15-20 水。
                  </p>
                  
@@ -354,7 +354,7 @@ export default function WellnessPage() {
                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded-full ml-2">14入 / 包</span>
                  </div>
 
-                 <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                 <p className="text-gray-700 text-base mb-4 leading-[1.8]">
                    近百年古樹製作。木質陳香醇厚，口感滑順如絲。溫潤暖胃，可連續沖泡 10 次以上。
                  </p>
                  

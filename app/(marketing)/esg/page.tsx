@@ -28,7 +28,7 @@ export default function EsgPage() {
           數據驅動永續，<br className="md:hidden"/>智慧賦能治理 <br/>
           <span className="text-2xl md:text-3xl mt-4 block font-light text-gray-500">ESG Strategy & Carbon Verification</span>
         </h1>
-        <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-10">
+        <p className="text-lg md:text-xl text-gray-700 leading-[1.8] max-w-3xl mx-auto mb-10">
           RonsunAI 結合<strong>「國際碳盤查標準 (ISO 14064)」</strong>與獨家<strong>「Wismath 組織動能分析」</strong>。
           我們協助企業從溫室氣體盤查、減碳路徑規劃，到優化治理結構，實現符合國際規範且具備東方智慧的永續經營。
         </p>
@@ -51,7 +51,7 @@ export default function EsgPage() {
       </section>
 
       {/* E.S.G Strategic Pillars (Three Columns) */}
-      <section className="px-6 py-20 bg-white">
+      <section className="px-6 py-24 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-serif font-bold mb-4">Our ESG Strategic Pillars</h2>
@@ -66,7 +66,7 @@ export default function EsgPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Environmental</h3>
               <p className="text-xs font-bold text-[#2D6A4F] mb-4 uppercase tracking-wide">Net Zero Path & Carbon Audit</p>
-              <p className="text-sm text-gray-600 mb-6 leading-relaxed">
+              <p className="text-base text-gray-700 mb-6 leading-[1.8]">
                 專注於氣候變遷風險管理與碳資產佈局。我們提供精準的碳盤查服務，協助企業接軌國際供應鏈要求。
               </p>
               <ul className="space-y-3 text-sm text-gray-700">
@@ -83,7 +83,7 @@ export default function EsgPage() {
               </div>
               <h3 className="text-xl font-bold mb-2 relative z-10">Social</h3>
               <p className="text-xs font-bold text-[#C59D5F] mb-4 uppercase tracking-wide relative z-10">Human Capital & DE&I</p>
-              <p className="text-sm text-gray-600 mb-6 leading-relaxed relative z-10">
+              <p className="text-base text-gray-700 mb-6 leading-[1.8] relative z-10">
                 不同於傳統問卷調查，我們運用 <strong>Wismath AI</strong> 進行深度的組織相性分析，優化人才留任率與團隊動能，落實真正的多元共融 (DE&I)。
               </p>
               <ul className="space-y-3 text-sm text-gray-700 relative z-10">
@@ -102,7 +102,7 @@ export default function EsgPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Governance</h3>
               <p className="text-xs font-bold text-[#1A1A1A] mb-4 uppercase tracking-wide">Risk & Compliance</p>
-              <p className="text-sm text-gray-600 mb-6 leading-relaxed">
+              <p className="text-base text-gray-700 mb-6 leading-[1.8]">
                 強化董事會職能與風險管理架構。我們協助企業建立透明、當責的治理機制，確保長期穩健經營。
               </p>
               <ul className="space-y-3 text-sm text-gray-700">
@@ -116,7 +116,7 @@ export default function EsgPage() {
       </section>
 
       {/* Carbon Verification Deep Dive (New Section) */}
-      <section className="px-6 py-24 bg-[#1A1A1A] text-white">
+      <section className="px-6 py-32 bg-[#1A1A1A] text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
@@ -125,7 +125,7 @@ export default function EsgPage() {
                 專業碳盤查與碳足跡服務 <br/>
                 <span className="text-[#C59D5F]">ISO 14064-1 Compliance</span>
               </h2>
-              <p className="text-gray-400 mb-8 leading-relaxed">
+              <p className="text-gray-300 mb-8 leading-[1.8] text-base">
                 面對碳有價時代，企業必須掌握自身的排放數據。我們提供從「邊界設定」到「查證輔導」的一站式服務，協助您精準計算範疇一、二、三 (Scope 1, 2, 3) 的排放量，產出具公信力的盤查報告書。
               </p>
               
@@ -149,28 +149,28 @@ export default function EsgPage() {
                 <div className="w-10 h-10 rounded-full bg-[#C59D5F] text-[#1A1A1A] flex items-center justify-center font-bold">01</div>
                 <div>
                   <h4 className="font-bold">範疇界定 (Boundary Setting)</h4>
-                  <p className="text-sm text-gray-400">營運邊界設定，鑑別排放源 (Scope 1/2/3)。</p>
+                  <p className="text-sm text-gray-300">營運邊界設定，鑑別排放源 (Scope 1/2/3)。</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/10 hover:bg-white/10 transition">
                 <div className="w-10 h-10 rounded-full bg-[#C59D5F] text-[#1A1A1A] flex items-center justify-center font-bold">02</div>
                 <div>
                   <h4 className="font-bold">數據量化 (Quantification)</h4>
-                  <p className="text-sm text-gray-400">活動數據收集，排放係數選用與計算。</p>
+                  <p className="text-sm text-gray-300">活動數據收集，排放係數選用與計算。</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/10 hover:bg-white/10 transition">
                 <div className="w-10 h-10 rounded-full bg-[#C59D5F] text-[#1A1A1A] flex items-center justify-center font-bold">03</div>
                 <div>
                   <h4 className="font-bold">報告編制 (Reporting)</h4>
-                  <p className="text-sm text-gray-400">依循 GHG Protocol 或 ISO 規範產出報告書。</p>
+                  <p className="text-sm text-gray-300">依循 GHG Protocol 或 ISO 規範產出報告書。</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/10 hover:bg-white/10 transition">
                 <div className="w-10 h-10 rounded-full bg-[#C59D5F] text-[#1A1A1A] flex items-center justify-center font-bold">04</div>
                 <div>
                   <h4 className="font-bold">外部查證 (Verification Support)</h4>
-                  <p className="text-sm text-gray-400">協助通過第三方 (SGS/BSI 等) 查證取得聲明書。</p>
+                  <p className="text-sm text-gray-300">協助通過第三方 (SGS/BSI 等) 查證取得聲明書。</p>
                 </div>
               </div>
             </div>
@@ -179,7 +179,7 @@ export default function EsgPage() {
       </section>
 
       {/* Philosophy Section */}
-      <section className="px-6 py-20 bg-gradient-to-b from-[#F9F8F4] to-white">
+      <section className="px-6 py-24 bg-gradient-to-b from-[#F9F8F4] to-white">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-[3rem] p-12 md:p-16 shadow-xl border border-gray-100 relative overflow-hidden">
             {/* Decorative elements */}
@@ -192,7 +192,7 @@ export default function EsgPage() {
               <blockquote className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed font-serif italic">
                 「企業如人，需要正確的骨架才能長久。」
               </blockquote>
-              <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
+              <p className="text-lg text-gray-700 mb-10 leading-[1.8] max-w-2xl mx-auto">
                 我們不僅提供冰冷的數據報告，更結合東方管理哲學，從體質根本調整。
                 當碳盤查遇上 Wismath 智慧分析，我們協助您在合規的道路上，同時找到組織成長的動能。
               </p>
@@ -203,13 +203,14 @@ export default function EsgPage() {
                     size="lg"
                     className="rounded-full bg-[#1A1A1A] text-white hover:bg-[#C59D5F] px-10 py-6 text-base font-medium group shadow-lg"
                   >
-                    預約 ESG 診斷諮詢
+                    預約診斷諮詢
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
-                <button className="text-[#1A1A1A] px-8 py-3 rounded-full font-medium hover:text-[#C59D5F] transition-colors inline-flex items-center gap-2">
+                {/* 下載服務簡介 - 未來功能 */}
+                {/* <button className="text-[#1A1A1A] px-8 py-3 rounded-full font-medium hover:text-[#C59D5F] transition-colors inline-flex items-center gap-2">
                   <FileCheck className="w-4 h-4" /> 下載服務簡介
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

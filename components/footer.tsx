@@ -10,11 +10,14 @@ const footerLinks = {
     { name: "聯絡我們", href: "/contact" },
   ],
   legal: [
-    { name: "隱私權政策", href: "#" },
-    { name: "服務條款", href: "#" },
-    { name: "退款政策", href: "#" },
+    { name: "隱私權政策", href: "/privacy" },    // 含命理個資與 GDPR 規範
+    { name: "服務條款", href: "/terms" },        // 含版權保護與 ESG 顧問責任
+    { name: "退款政策", href: "/refund" },       // 區分虛擬課程與實體商品
+    { name: "免責聲明", href: "/disclaimer" },   // 核心防護：術數與健康建議免責
   ],
 }
+
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -22,7 +25,18 @@ export function Footer() {
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 border-b border-[#F5F5F0]/10 pb-12">
         {/* Brand Column */}
         <div>
-          <h2 className="font-serif text-3xl mb-6">Ronsun<span className="text-[#C59D5F]">.</span></h2>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="relative w-8 h-8">
+              <Image 
+                src="/ronsun_logo.png" 
+                alt="RonsunAI Logo" 
+                width={32} 
+                height={32}
+                className="object-contain brightness-0 invert"
+              />
+            </div>
+            <h2 className="font-serif text-3xl">Ronsun<span className="text-[#C59D5F]">.</span></h2>
+          </div>
           <p className="text-[#F5F5F0]/40 text-sm max-w-xs leading-relaxed">
             以古智定心，用科技賦能。<br />
             致力於構建生生不息的商業善循環。

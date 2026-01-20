@@ -17,9 +17,11 @@ export function Hero() {
             </h2>
             
             {/* 主標 - 使用 CIS 金色強調 */}
-            <h1 className="writing-vertical-rl text-4xl md:text-6xl text-[#1A1A1A] font-serif tracking-[0.2em] leading-relaxed font-medium h-full flex items-start">
-              <span className="text-[#C59D5F] drop-shadow-sm font-semibold">以古智定心</span>
-              <span className="mt-8">用科技賦能</span>
+            <h1 className="writing-vertical-rl text-4xl md:text-6xl font-serif tracking-[0.2em] leading-relaxed font-medium h-full flex items-start">
+              <span className="text-[#1A1A1A]">
+                <span className="text-[#C59D5F] drop-shadow-sm font-semibold">以古智定心</span>
+                用科技賦能
+              </span>
             </h1>
           </div>
         </div>

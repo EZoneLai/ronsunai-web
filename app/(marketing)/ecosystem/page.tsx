@@ -23,7 +23,7 @@ export default function EcosystemPage() {
           內聖外王，生生不息 <br/>
           <span className="text-2xl md:text-3xl mt-4 block font-light text-gray-500">The Ronsun Ecosystem</span>
         </h1>
-        <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-10">
+        <p className="text-lg md:text-xl text-gray-700 leading-[1.8] max-w-3xl mx-auto mb-10">
           我們不只是三個獨立的事業部，而是一個有機的生命循環。
           <br className="hidden md:block" />
           <strong>Wismath</strong> 指引方向，<strong>Wellness</strong> 穩固根基，<strong>ESG</strong> 構建未來。
@@ -32,7 +32,7 @@ export default function EcosystemPage() {
       </section>
 
       {/* The Cycle Visualization (視覺化循環) */}
-      <section className="px-6 py-12 bg-white overflow-hidden relative">
+      <section className="px-6 py-24 bg-white overflow-hidden relative">
         <div className="max-w-7xl mx-auto relative z-10">
           
           {/* Central Philosophy */}
@@ -53,7 +53,7 @@ export default function EcosystemPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">1. 養身 (Nourish)</h3>
               <p className="text-xs font-bold text-gray-400 uppercase mb-4">Input: Energy & Stability</p>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-700 text-base leading-[1.8]">
                 透過<strong>憩盞茶 (Citizen Tea)</strong> 與瑜珈鍛鍊，淨化身體載體。
                 身體是靈魂的殿堂，穩定的肉身頻率是接收高維智慧的基礎。
               </p>
@@ -66,7 +66,7 @@ export default function EcosystemPage() {
               </div>
               <h3 className="text-xl font-bold mb-2 text-white">2. 修心 (Awaken)</h3>
               <p className="text-xs font-bold text-gray-400 uppercase mb-4">Process: Decision & Clarity</p>
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-gray-300 text-base leading-[1.8]">
                 運用 <strong>Wismath AI</strong> 與 <strong>密吟 (Mystic Chant)</strong>。
                 在健康的身體基礎上，校準決策頻率。以古老術數結合數據運算，做出最符合天道的選擇。
               </p>
@@ -79,7 +79,7 @@ export default function EcosystemPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">3. 永續 (Sustain)</h3>
               <p className="text-xs font-bold text-gray-400 uppercase mb-4">Output: Impact & Longevity</p>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-700 text-base leading-[1.8]">
                 落實於 <strong>ESG 治理</strong> 與 <strong>系統架構</strong>。
                 清晰的決策轉化為具體的企業行動。打造對環境友善、對社會負責的組織，形成正向循環。
               </p>
@@ -93,7 +93,7 @@ export default function EcosystemPage() {
       </section>
 
       {/* The Integration Grid (如何整合) */}
-      <section className="px-6 py-20 bg-[#F9F8F4]">
+      <section className="px-6 py-24 bg-[#F9F8F4]">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             
@@ -106,7 +106,7 @@ export default function EcosystemPage() {
                   <div className="mt-1 bg-white p-2 rounded-lg h-fit"><Zap className="w-5 h-5 text-[#C59D5F]" /></div>
                   <div>
                     <h3 className="font-bold text-lg">For Entrepreneurs (創業者)</h3>
-                    <p className="text-sm text-gray-600 mt-1">
+                    <p className="text-base text-gray-700 mt-1 leading-[1.8]">
                       創業感到焦慮時，喝一杯<strong>阿里山烏龍</strong>定心；使用 <strong>Wismath</strong> 分析合夥人相性；最後透過 <strong>ESG 架構</strong>設立公司制度。一站式解決身、心、業的問題。
                     </p>
                   </div>
@@ -117,7 +117,7 @@ export default function EcosystemPage() {
                   <div className="mt-1 bg-white p-2 rounded-lg h-fit"><Network className="w-5 h-5 text-[#C59D5F]" /></div>
                   <div>
                     <h3 className="font-bold text-lg">For Corporations (大型企業)</h3>
-                    <p className="text-sm text-gray-600 mt-1">
+                    <p className="text-base text-gray-700 mt-1 leading-[1.8]">
                       導入 <strong>ISO 14064 碳盤查</strong>滿足法規；同時為高管團隊舉辦 <strong>茶香正念工作坊</strong>，並利用 <strong>AI 命理</strong>優化人力資源配置，提升軟實力。
                     </p>
                   </div>
@@ -128,7 +128,7 @@ export default function EcosystemPage() {
                   <div className="mt-1 bg-white p-2 rounded-lg h-fit"><Leaf className="w-5 h-5 text-[#C59D5F]" /></div>
                   <div>
                     <h3 className="font-bold text-lg">For Individuals (個人修行者)</h3>
-                    <p className="text-sm text-gray-600 mt-1">
+                    <p className="text-base text-gray-700 mt-1 leading-[1.8]">
                       聆聽 <strong>密吟 (Mystic Chant)</strong> 進行冥想；品味 <strong>老普洱</strong> 感受時間的厚度；在這個生態系中找到屬於自己的生命節奏。
                     </p>
                   </div>
@@ -141,7 +141,7 @@ export default function EcosystemPage() {
             <div className="bg-[#1A1A1A] rounded-[3rem] p-10 text-white relative overflow-hidden text-center md:text-left">
               <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-[#C59D5F] to-transparent opacity-20 rounded-bl-full"></div>
               <h3 className="text-2xl font-serif font-bold mb-4 relative z-10">Join the Ecosystem</h3>
-              <p className="text-gray-300 mb-8 relative z-10">
+              <p className="text-gray-300 mb-8 relative z-10 text-base leading-[1.8]">
                 無論您是尋求商業突破，還是心靈平靜，容晟生態系都有您的位置。讓我們一起構建善的循環。
               </p>
               <div className="flex flex-col md:flex-row gap-4 relative z-10">

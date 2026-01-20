@@ -22,9 +22,10 @@ export function Founder() {
             />
             <div className="absolute inset-0 bg-[#1A1A1A]/10 mix-blend-multiply"></div>
             <div className="absolute inset-4 border border-[#1A1A1A]/20"></div>
-            <div className="absolute bottom-8 left-8 right-8 text-white">
-              <p className="font-serif text-2xl">Eugene Lai</p>
-              <p className="text-xs uppercase tracking-widest opacity-80 mt-1">Founder & CEO</p>
+            {/* 底部文字區 - 優化辨識度 */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1A1A1A]/80 via-[#1A1A1A]/50 to-transparent pt-16 pb-8 px-8">
+              <p className="font-sans text-2xl font-semibold text-white drop-shadow-lg" style={{textShadow: '0 2px 4px rgba(0,0,0,0.5)'}}>Eugene Lai</p>
+              <p className="font-sans text-xs uppercase tracking-widest text-white/90 mt-1 drop-shadow-md" style={{textShadow: '0 1px 2px rgba(0,0,0,0.5)'}}>Founder & CEO</p>
             </div>
           </div>
           {/* 裝飾元素 - 使用金光 */}
@@ -47,6 +48,14 @@ export function Founder() {
             <p>
               容晟科技 (Ronsun) 的存在，是為了在混亂中建立秩序。無論是透過程式碼優化系統效率，還是一杯茶安頓身心，我們提供的都是一套完整的「生命解決方案」。
             </p>
+          </div>
+
+          <div className="mt-12">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Signature_sample.svg/1200px-Signature_sample.svg.png" 
+              alt="Signature" 
+              className="h-12 opacity-30 invert-[.2]" 
+            />
           </div>
         </div>
       </div>
