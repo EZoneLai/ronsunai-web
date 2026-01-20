@@ -1,0 +1,25 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- 外框 -->
+  <rect 
+    x="10" 
+    y="10" 
+    width="80" 
+    height="80" 
+    fill="none" 
+    stroke="#1A1A1A" 
+    stroke-width="3" 
+  />
+  
+  <!-- 中心 R 字母 -->
+  <text 
+    x="50" 
+    y="68" 
+    font-family="serif" 
+    font-size="52" 
+    font-weight="bold" 
+    fill="#1A1A1A" 
+    text-anchor="middle"
+  >
+    R
+  </text>
+</svg>

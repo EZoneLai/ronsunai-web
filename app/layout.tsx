@@ -30,9 +30,6 @@ export const metadata: Metadata = {
   title: 'RonsunAI - Ancient Wisdom for the Soul, Future Tech for the World',
   description: 'From AI-driven decisions to sustainable trade. RonsunAI is your vessel for balance. Wismath AI, Wellness Trade, and ESG Consulting.',
   generator: 'v0.app',
-  icons: {
-    icon: '/icon.svg',
-  },
 }
 
 export const viewport: Viewport = {
