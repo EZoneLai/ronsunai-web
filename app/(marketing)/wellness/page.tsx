@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowLeft, Coffee, Droplets, FlaskConical, Leaf, Wine, Mountain, Clock, Star, Sparkles, Gift } from "lucide-react"
+import { ArrowLeft, Coffee, Droplets, FlaskConical, Leaf, Wine, Mountain, Clock, Star, Sparkles, Gift, ExternalLink } from "lucide-react"
 
 export default function WellnessPage() {
   return (
@@ -60,12 +60,12 @@ export default function WellnessPage() {
             {/* Item 2 */}
             <div className="group border-b border-gray-100 pb-8 hover:bg-gray-50 p-6 rounded-2xl transition-colors">
               <div className="flex justify-between items-baseline mb-2">
-                <h3 className="text-xl font-bold text-[#1A1A1A]">日月潭著涎紅玉 (Ruby Black)</h3>
+                <h3 className="text-xl font-bold text-[#1A1A1A]">日月潭著蜒紅玉 (Ruby Black)</h3>
                 <span className="text-[#C59D5F] font-bold">NT$ 1,650 <span className="text-xs text-gray-400">/ 75g</span></span>
               </div>
               <p className="text-sm text-gray-600 mb-3 italic">"Cinnamon, Mint, Natural Honey"</p>
               <p className="text-gray-500 text-sm leading-relaxed">
-                台灣特有品種台茶 18 號。經小綠葉蟬吸食（著涎）後，轉化出天然的蜜香、肉桂香與淡淡薄荷感。
+                台灣特有品種台茶 18 號。經小綠葉蟬吸食（著蜒）後，轉化出天然的蜜香、肉桂香與淡淡薄荷感。
                 這款茶證明了台灣紅茶足以驚艷世界，口感層次豐富，久泡不澀。
               </p>
             </div>
@@ -249,7 +249,7 @@ export default function WellnessPage() {
         </div>
       </section>
 
-      {/* Gift Sets (Tea Bags) */}
+      {/* Gift Sets (Tea Bags) - Link to Contact */}
       <section className="px-6 py-20 max-w-5xl mx-auto">
         <div className="bg-[#1A1A1A] text-white rounded-[3rem] p-12 text-center relative overflow-hidden">
           {/* Decorative background circle */}
@@ -261,13 +261,16 @@ export default function WellnessPage() {
             熟香包種 (綠) • 阿里山烏龍 (銀) • 蜜香貴妃 (白) • 紅玉紅茶 (紅)
           </p>
           <div className="text-4xl font-bold text-[#C59D5F] mb-10 relative z-10">NT$ 200 <span className="text-base text-gray-400 font-normal">/ 4入一組</span></div>
-          <button className="bg-white text-[#1A1A1A] px-10 py-4 rounded-full font-bold hover:bg-[#C59D5F] hover:text-white transition-all shadow-lg hover:shadow-xl relative z-10">
-            預約品鑑 / 購買
-          </button>
+          
+          <Link href="/contact">
+            <button className="bg-white text-[#1A1A1A] px-10 py-4 rounded-full font-bold hover:bg-[#C59D5F] hover:text-white transition-all shadow-lg hover:shadow-xl relative z-10">
+              預約品鑑 / 聯繫我們
+            </button>
+          </Link>
         </div>
       </section>
 
-      {/* Signature Mini Cakes (Best Sellers) - UPDATED WITH SPECIFIC DATA */}
+      {/* Signature Mini Cakes (Best Sellers) - UPDATED WITH EXTERNAL LINKS */}
       <section className="px-6 py-20 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -282,7 +285,7 @@ export default function WellnessPage() {
           
           <div className="grid md:grid-cols-2 gap-8 text-left">
             {/* Raw Cake Card (龍年古樹生茶) */}
-            <div className="bg-[#F9F8F4] p-8 rounded-3xl group cursor-pointer border border-transparent hover:border-[#C59D5F] transition-all relative overflow-hidden hover:shadow-xl flex flex-col md:flex-row gap-8 items-center md:items-start">
+            <div className="bg-[#F9F8F4] p-8 rounded-3xl group border border-transparent hover:border-[#C59D5F] transition-all relative overflow-hidden hover:shadow-xl flex flex-col md:flex-row gap-8 items-center md:items-start">
                {/* Image Placeholder / Visual */}
                <div className="w-full md:w-1/3 flex-shrink-0 relative">
                  <div className="absolute top-0 left-0 bg-[#C59D5F] text-white text-xs font-bold px-3 py-1 rounded-br-lg shadow-sm z-10">Sale</div>
@@ -315,14 +318,19 @@ export default function WellnessPage() {
                    <li className="flex items-center gap-1"><Gift className="w-3 h-3 text-[#C59D5F]"/> 限量 50 組</li>
                  </ul>
 
-                 <button className="w-full bg-white border border-[#1A1A1A] text-[#1A1A1A] py-3 rounded-xl font-bold hover:bg-[#1A1A1A] hover:text-white transition-colors text-sm">
-                   加入購物車
-                 </button>
+                 <a 
+                   href="https://www.nonishops.com/products/%E9%BE%8D%E5%B9%B4%E5%8F%A4%E6%A8%B9%E6%99%AE%E6%B4%B1%E8%8C%B6%E5%B0%8F%E9%A4%85-10%E5%85%A5-" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   className="block w-full text-center bg-white border border-[#1A1A1A] text-[#1A1A1A] py-3 rounded-xl font-bold hover:bg-[#1A1A1A] hover:text-white transition-colors text-sm flex items-center justify-center gap-2"
+                 >
+                   前往商城購買 <ExternalLink className="w-4 h-4" />
+                 </a>
                </div>
             </div>
 
             {/* Ripe Cake Card (龍年古樹熟茶) */}
-            <div className="bg-[#F9F8F4] p-8 rounded-3xl group cursor-pointer border border-transparent hover:border-[#C59D5F] transition-all relative overflow-hidden hover:shadow-xl flex flex-col md:flex-row gap-8 items-center md:items-start">
+            <div className="bg-[#F9F8F4] p-8 rounded-3xl group border border-transparent hover:border-[#C59D5F] transition-all relative overflow-hidden hover:shadow-xl flex flex-col md:flex-row gap-8 items-center md:items-start">
                {/* Image Placeholder / Visual */}
                <div className="w-full md:w-1/3 flex-shrink-0 relative">
                  <div className="absolute top-0 left-0 bg-[#C59D5F] text-white text-xs font-bold px-3 py-1 rounded-br-lg shadow-sm z-10">Sale</div>
@@ -355,9 +363,14 @@ export default function WellnessPage() {
                    <li className="flex items-center gap-1"><Gift className="w-3 h-3 text-[#C59D5F]"/> 限量 50 組</li>
                  </ul>
 
-                 <button className="w-full bg-white border border-[#1A1A1A] text-[#1A1A1A] py-3 rounded-xl font-bold hover:bg-[#1A1A1A] hover:text-white transition-colors text-sm">
-                   加入購物車
-                 </button>
+                 <a 
+                   href="https://www.nonishops.com/products/%E9%BE%8D%E5%B9%B4%E5%8F%A4%E6%A8%B9%E6%99%AE%E6%B4%B1%E8%8C%B6%E7%86%9F%E8%8C%B6%E5%B0%8F%E9%A4%85-14%E5%85%A5-" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   className="block w-full text-center bg-white border border-[#1A1A1A] text-[#1A1A1A] py-3 rounded-xl font-bold hover:bg-[#1A1A1A] hover:text-white transition-colors text-sm flex items-center justify-center gap-2"
+                 >
+                   前往商城購買 <ExternalLink className="w-4 h-4" />
+                 </a>
                </div>
             </div>
 
