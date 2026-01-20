@@ -11,7 +11,7 @@ export default function ContactPage() {
         <Link href="/" className="inline-flex items-center gap-2 text-gray-500 hover:text-[#C59D5F] transition-colors group">
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> 返回首頁
         </Link>
-        <span className="font-serif font-bold text-lg">RonsunAI</span>
+        <Link href="/" className="font-serif font-bold text-lg text-[#1A1A1A] hover:text-[#C59D5F] transition-colors">RonsunAI</Link>
       </nav>
 
       {/* Hero Section */}

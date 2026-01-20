@@ -19,7 +19,7 @@ export function Services() {
         {/* 服務列表 */}
         <div className="grid grid-cols-1 gap-px bg-[#1A1A1A]/10 border border-[#1A1A1A]/10">
           {/* Wismath AI */}
-          <div className="bg-[#F5F5F0] p-10 md:p-16 hover:bg-[#F9F9F7] transition-colors group relative overflow-hidden">
+          <a href="https://www.wismath.work" target="_blank" rel="noopener noreferrer" className="block bg-[#F5F5F0] p-10 md:p-16 hover:bg-[#F9F9F7] transition-colors group relative overflow-hidden cursor-pointer">
             <div className="absolute top-0 right-0 p-12 opacity-0 group-hover:opacity-5 transition-opacity duration-700 transform translate-x-1/4 -translate-y-1/4">
               <Sparkles size={300} strokeWidth={0.5} />
             </div>
@@ -33,34 +33,34 @@ export function Services() {
                 <p className="text-[#1A1A1A]/85 leading-relaxed mb-8 max-w-2xl font-light">
                   結合古老易經邏輯與現代 AI 演算法。我們開發命理決策系統、療癒音頻「密吟」，並為企業提供高併發系統架構設計。這不只是軟體，是數位時代的智慧導航。
                 </p>
-                <a href="https://www.wismath.work" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs tracking-widest uppercase border-b border-[#1A1A1A] pb-1 hover:text-[#C59D5F] hover:border-[#C59D5F] transition-colors">
+                <span className="inline-flex items-center text-xs tracking-widest uppercase border-b border-[#1A1A1A] pb-1 group-hover:text-[#C59D5F] group-hover:border-[#C59D5F] transition-colors">
                   Explore Project <ArrowRight className="ml-2 w-3 h-3" />
-                </a>
+                </span>
               </div>
             </div>
-          </div>
+          </a>
 
           {/* 雙欄佈局 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#1A1A1A]/10">
             {/* Wellness */}
-            <div className="bg-[#F5F5F0] p-10 md:p-12 hover:bg-[#F9F9F7] transition-colors group">
+            <a href="/wellness" className="block bg-[#F5F5F0] p-10 md:p-12 hover:bg-[#F9F9F7] transition-colors group cursor-pointer">
               <Leaf className="w-8 h-8 text-[#1A1A1A]/40 mb-8" strokeWidth={1} />
               <h3 className="text-xl font-serif text-[#1A1A1A] mb-4 group-hover:text-[#C59D5F] transition-colors">養生貿易</h3>
               <p className="text-[#1A1A1A]/85 text-sm leading-relaxed mb-8 min-h-[4rem]">
                 身體是靈魂的殿堂。嚴選瑜伽輔具、健身器材，以及來自雲南深山的頂級普洱茶，讓自然能量流動於日常。
               </p>
-              <a href="/wellness" className="text-sm text-[#1A1A1A] font-medium hover:text-[#C59D5F] transition-colors">選購商品 →</a>
-            </div>
+              <span className="text-sm text-[#1A1A1A] font-medium group-hover:text-[#C59D5F] transition-colors">選購商品 →</span>
+            </a>
 
             {/* ESG */}
-            <div className="bg-[#F5F5F0] p-10 md:p-12 hover:bg-[#F9F9F7] transition-colors group">
+            <a href="/esg" className="block bg-[#F5F5F0] p-10 md:p-12 hover:bg-[#F9F9F7] transition-colors group cursor-pointer">
               <BarChart3 className="w-8 h-8 text-[#1A1A1A]/40 mb-8" strokeWidth={1} />
               <h3 className="text-xl font-serif text-[#1A1A1A] mb-4 group-hover:text-[#C59D5F] transition-colors">ESG 管理顧問</h3>
               <p className="text-[#1A1A1A]/60 text-sm leading-relaxed mb-8 min-h-[4rem]">
                 企業如人，需正其骨。協助企業導入國際 ESG 標準，優化組織架構，打造具備韌性與永續力的商業體質。
               </p>
-              <a href="/esg" className="text-sm text-[#1A1A1A] font-medium hover:text-[#C59D5F] transition-colors">諮詢服務 →</a>
-            </div>
+              <span className="text-sm text-[#1A1A1A] font-medium group-hover:text-[#C59D5F] transition-colors">諾詢服務 →</span>
+            </a>
           </div>
         </div>
       </div>

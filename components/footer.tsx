@@ -18,6 +18,7 @@ const footerLinks = {
 }
 
 import Image from "next/image"
+import Link from "next/link"
 
 export function Footer() {
   return (
@@ -39,9 +40,9 @@ export function Footer() {
           </div>
           
           {/* Logo + RONSUN 文字 */}
-          <div className="flex items-center gap-4 mb-6">
+          <Link href="/" className="flex items-center gap-4 mb-6 group w-fit">
             {/* Logo - 方形簡潔設計 */}
-            <div className="w-12 h-12 group cursor-pointer">
+            <div className="w-12 h-12">
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="w-full h-full transition-all duration-500">
                 {/* 外框 - hover 時變金色 */}
                 <rect 
@@ -68,8 +69,8 @@ export function Footer() {
                 </text>
               </svg>
             </div>
-            <h2 className="font-serif text-3xl">Ronsun<span className="text-[#C59D5F]">.</span></h2>
-          </div>
+            <h2 className="font-serif text-3xl group-hover:text-[#C59D5F] transition-colors duration-500">Ronsun<span className="text-[#C59D5F]">.</span></h2>
+          </Link>
           <p className="text-[#F5F5F0]/40 text-sm max-w-xs leading-relaxed">
             以古智定心，用科技賦能。<br />
             致力於構建生生不息的商業善循環。

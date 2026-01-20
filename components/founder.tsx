@@ -24,7 +24,7 @@ export function Founder() {
             <div className="absolute inset-4 border border-[#1A1A1A]/20"></div>
             {/* 底部文字區 - 優化辨識度 */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1A1A1A]/80 via-[#1A1A1A]/50 to-transparent pt-16 pb-8 px-8">
-              <p className="text-3xl font-cormorant font-semibold text-white drop-shadow-lg tracking-wide" style={{textShadow: '0 2px 4px rgba(0,0,0,0.5)'}}>Eugene Lai</p>
+              <p className="text-3xl font-semibold text-white drop-shadow-lg tracking-wide" style={{textShadow: '0 2px 4px rgba(0,0,0,0.5)', fontFamily: 'var(--font-cormorant)'}}>Eugene Lai</p>
               <p className="font-sans text-xs uppercase tracking-widest text-white/90 mt-1 drop-shadow-md" style={{textShadow: '0 1px 2px rgba(0,0,0,0.5)'}}>Founder & CEO</p>
             </div>
           </div>
@@ -51,11 +51,46 @@ export function Founder() {
           </div>
 
           <div className="mt-12">
-            <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Signature_sample.svg/1200px-Signature_sample.svg.png" 
-              alt="Signature" 
-              className="h-12 opacity-30 invert-[.2]" 
-            />
+            {/* Eugene Lai 簽名風格 */}
+            <svg 
+              viewBox="0 0 200 60" 
+              xmlns="http://www.w3.org/2000/svg" 
+              className="h-12 w-auto opacity-40"
+            >
+              {/* E */}
+              <path 
+                d="M 10 15 Q 15 10, 25 15 Q 30 20, 25 30 Q 20 35, 15 32" 
+                fill="none" 
+                stroke="#1A1A1A" 
+                strokeWidth="1.5" 
+                strokeLinecap="round"
+              />
+              {/* L */}
+              <path 
+                d="M 35 12 Q 40 25, 38 35 L 42 38" 
+                fill="none" 
+                stroke="#1A1A1A" 
+                strokeWidth="1.5" 
+                strokeLinecap="round"
+              />
+              {/* ai - 連筆 */}
+              <path 
+                d="M 50 20 Q 55 15, 60 20 Q 62 25, 58 30 Q 65 28, 70 32" 
+                fill="none" 
+                stroke="#1A1A1A" 
+                strokeWidth="1.5" 
+                strokeLinecap="round"
+              />
+              {/* 裝飾線 */}
+              <path 
+                d="M 75 25 Q 100 20, 125 28 Q 150 35, 170 30" 
+                fill="none" 
+                stroke="#C59D5F" 
+                strokeWidth="0.8" 
+                strokeLinecap="round"
+                opacity="0.5"
+              />
+            </svg>
           </div>
         </div>
       </div>
