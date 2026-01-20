@@ -26,44 +26,33 @@ export function Footer() {
         {/* Brand Column */}
         <div>
           <div className="flex items-center gap-4 mb-6">
-            <div className="flex flex-col items-center gap-3">
-              {/* 真實 Logo 圖片 */}
-              <div className="relative w-12 h-12">
-                <Image 
-                  src="/ronsun_logo.png" 
-                  alt="RonsunAI Logo" 
-                  width={48} 
-                  height={48}
-                  className="object-contain brightness-0 invert"
+            {/* Logo - 方形簡潔設計 */}
+            <div className="w-12 h-12 group cursor-pointer">
+              <svg viewBox="0 0 100 100" className="w-full h-full transition-all duration-500">
+                {/* 外框 - hover 時變金色 */}
+                <rect 
+                  x="10" 
+                  y="10" 
+                  width="80" 
+                  height="80" 
+                  fill="none" 
+                  className="stroke-[#F5F5F0] group-hover:stroke-[#C59D5F] transition-colors duration-500" 
+                  strokeWidth="2" 
                 />
-              </div>
-              
-              {/* SVG Logo - 容晟圖形 */}
-              <div className="w-12 h-12">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-                  {/* 外框 */}
-                  <rect x="10" y="10" width="80" height="80" fill="none" stroke="#F5F5F0" strokeWidth="2" />
-                  
-                  {/* 中心 R 字母 */}
-                  <text 
-                    x="50" 
-                    y="65" 
-                    fontFamily="serif" 
-                    fontSize="48" 
-                    fontWeight="bold" 
-                    fill="#F5F5F0" 
-                    textAnchor="middle"
-                  >
-                    R
-                  </text>
-                  
-                  {/* 裝飾線條 - 上 */}
-                  <line x1="20" y1="25" x2="40" y2="25" stroke="#C59D5F" strokeWidth="1.5" />
-                  
-                  {/* 裝飾線條 - 下 */}
-                  <line x1="60" y1="75" x2="80" y2="75" stroke="#C59D5F" strokeWidth="1.5" />
-                </svg>
-              </div>
+                
+                {/* 中心 R 字母 - hover 時變金色 */}
+                <text 
+                  x="50" 
+                  y="65" 
+                  fontFamily="serif" 
+                  fontSize="48" 
+                  fontWeight="bold" 
+                  className="fill-[#F5F5F0] group-hover:fill-[#C59D5F] transition-colors duration-500" 
+                  textAnchor="middle"
+                >
+                  R
+                </text>
+              </svg>
             </div>
             <h2 className="font-serif text-3xl">Ronsun<span className="text-[#C59D5F]">.</span></h2>
           </div>

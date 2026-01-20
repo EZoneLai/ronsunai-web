@@ -19,12 +19,32 @@ export function Navbar() {
     }`}>
       <div className="mx-auto max-w-screen-xl px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="group">
-          {/* Logo - 簽名式設計，預設墨黑 (#1A1A1A) -> Hover 變 CIS金 (#C59D5F) */}
-          <img 
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Signature_sample.svg/1200px-Signature_sample.svg.png" 
-            alt="Ronsun Logo" 
-            className="h-8 opacity-30 invert-[.2] group-hover:opacity-50 transition-all duration-500 group-hover:brightness-[1.5] group-hover:hue-rotate-15" 
-          />
+          {/* Logo - 方形簡潔設計 */}
+          <svg viewBox="0 0 100 100" className="h-8 w-8 transition-all duration-500">
+            {/* 外框 - hover 時變金色 */}
+            <rect 
+              x="10" 
+              y="10" 
+              width="80" 
+              height="80" 
+              fill="none" 
+              className="stroke-[#1A1A1A] group-hover:stroke-[#C59D5F] transition-colors duration-500" 
+              strokeWidth="2" 
+            />
+            
+            {/* 中心 R 字母 - hover 時變金色 */}
+            <text 
+              x="50" 
+              y="65" 
+              fontFamily="serif" 
+              fontSize="48" 
+              fontWeight="bold" 
+              className="fill-[#1A1A1A] group-hover:fill-[#C59D5F] transition-colors duration-500" 
+              textAnchor="middle"
+            >
+              R
+            </text>
+          </svg>
         </Link>
         
         <div className="hidden md:flex items-center gap-12">

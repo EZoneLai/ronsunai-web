@@ -30,7 +30,7 @@ export function Services() {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-serif text-[#1A1A1A] mb-4 group-hover:text-[#C59D5F] transition-colors">Wismath AI 智慧賦能</h3>
-                <p className="text-[#1A1A1A]/60 leading-relaxed mb-8 max-w-2xl font-light">
+                <p className="text-[#1A1A1A]/85 leading-relaxed mb-8 max-w-2xl font-light">
                   結合古老易經邏輯與現代 AI 演算法。我們開發命理決策系統、療癒音頻「密吟」，並為企業提供高併發系統架構設計。這不只是軟體，是數位時代的智慧導航。
                 </p>
                 <a href="https://www.wismath.work" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs tracking-widest uppercase border-b border-[#1A1A1A] pb-1 hover:text-[#C59D5F] hover:border-[#C59D5F] transition-colors">
@@ -46,7 +46,7 @@ export function Services() {
             <div className="bg-[#F5F5F0] p-10 md:p-12 hover:bg-[#F9F9F7] transition-colors group">
               <Leaf className="w-8 h-8 text-[#1A1A1A]/40 mb-8" strokeWidth={1} />
               <h3 className="text-xl font-serif text-[#1A1A1A] mb-4 group-hover:text-[#C59D5F] transition-colors">養生貿易</h3>
-              <p className="text-[#1A1A1A]/60 text-sm leading-relaxed mb-8 min-h-[4rem]">
+              <p className="text-[#1A1A1A]/85 text-sm leading-relaxed mb-8 min-h-[4rem]">
                 身體是靈魂的殿堂。嚴選瑜伽輔具、健身器材，以及來自雲南深山的頂級普洱茶，讓自然能量流動於日常。
               </p>
               <a href="/wellness" className="text-sm text-[#1A1A1A] font-medium hover:text-[#C59D5F] transition-colors">選購商品 →</a>

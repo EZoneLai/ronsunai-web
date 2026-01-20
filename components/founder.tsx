@@ -41,7 +41,7 @@ export function Founder() {
             <span className="italic text-[#1A1A1A]/60">智慧讓我們走得更遠。</span>
           </h2>
 
-          <div className="space-y-6 text-[#1A1A1A]/70 font-light leading-loose text-justify">
+          <div className="space-y-6 text-[#1A1A1A]/85 font-light leading-loose text-justify">
             <p>
               我是一名工程師，也是一位茶人；我研究大數據，也鑽研古老易經。這看似矛盾，實則一體。在快速變遷的數位時代，我們往往迷失了方向。
             </p>
