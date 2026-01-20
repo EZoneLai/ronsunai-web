@@ -17,8 +17,6 @@ const footerLinks = {
   ],
 }
 
-import Image from "next/image"
-
 export function Footer() {
   return (
     <footer className="bg-[#1A1A1A] text-[#F5F5F0] pt-24 pb-12 px-6">
@@ -26,14 +24,31 @@ export function Footer() {
         {/* Brand Column */}
         <div>
           <div className="flex items-center gap-4 mb-6">
-            <div className="relative w-12 h-12">
-              <Image 
-                src="/ronsun_logo.png" 
-                alt="RonsunAI Logo" 
-                width={48} 
-                height={48}
-                className="object-contain brightness-0 invert"
-              />
+            {/* SVG Logo - 容晟圖形 */}
+            <div className="w-12 h-12">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+                {/* 外框 */}
+                <rect x="10" y="10" width="80" height="80" fill="none" stroke="#F5F5F0" strokeWidth="2" />
+                
+                {/* 中心 R 字母 */}
+                <text 
+                  x="50" 
+                  y="65" 
+                  fontFamily="serif" 
+                  fontSize="48" 
+                  fontWeight="bold" 
+                  fill="#F5F5F0" 
+                  textAnchor="middle"
+                >
+                  R
+                </text>
+                
+                {/* 裝飾線條 - 上 */}
+                <line x1="20" y1="25" x2="40" y2="25" stroke="#C59D5F" strokeWidth="1.5" />
+                
+                {/* 裝飾線條 - 下 */}
+                <line x1="60" y1="75" x2="80" y2="75" stroke="#C59D5F" strokeWidth="1.5" />
+              </svg>
             </div>
             <h2 className="font-serif text-3xl">Ronsun<span className="text-[#C59D5F]">.</span></h2>
           </div>
