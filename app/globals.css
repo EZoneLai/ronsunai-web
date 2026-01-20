@@ -1,18 +1,19 @@
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
 /* Japandi Tech Theme - RonsunAI */
 :root {
-  /* Core Japandi Colors */
-  --background: #F9F8F4; /* Warm Off-White / Paper Texture */
+  /* Core Japandi Colors - 更新為水墨禪風色系 */
+  --background: #F5F5F0; /* 更淡雅的紙張色 */
   --foreground: #1A1A1A; /* Ink Black */
-  --card: #F9F8F4;
+  --card: #F5F5F0;
   --card-foreground: #1A1A1A;
-  --popover: #F9F8F4;
+  --popover: #F5F5F0;
   --popover-foreground: #1A1A1A;
   --primary: #1A1A1A; /* Ink Black for buttons */
-  --primary-foreground: #F9F8F4;
+  --primary-foreground: #F5F5F0;
   --secondary: #E2E8F0; /* Sage Grey */
   --secondary-foreground: #1A1A1A;
   --muted: #E2E8F0;
@@ -26,6 +27,12 @@
   --ring: #C59D5F;
   --radius: 1rem;
 
+  /* 新增：水墨禪風專用色 */
+  --paper-light: #F5F5F0;
+  --paper-darker: #EAEAE5;
+  --ink: #1A1A1A;
+  --gold: #C59D5F;
+
   /* Shadcn/UI Chart Colors (added) */
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
@@ -34,10 +41,10 @@
   --chart-5: oklch(0.769 0.188 70.08);
 
   /* Shadcn/UI Sidebar Colors (added) */
-  --sidebar: #F9F8F4; /* Using existing paper color for consistency */
+  --sidebar: #F5F5F0; /* Using existing paper color for consistency */
   --sidebar-foreground: #1A1A1A; /* Using existing ink color for consistency */
   --sidebar-primary: #1A1A1A; /* Using existing primary color for consistency */
-  --sidebar-primary-foreground: #F9F8F4; /* Using existing primary-foreground for consistency */
+  --sidebar-primary-foreground: #F5F5F0; /* Using existing primary-foreground for consistency */
   --sidebar-accent: #C59D5F; /* Using existing accent color for consistency */
   --sidebar-accent-foreground: #1A1A1A; /* Using existing accent-foreground for consistency */
   --sidebar-border: #E2E8F0; /* Using existing border color for consistency */
@@ -138,5 +145,30 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  
+  /* 平滑捲動 */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* 直書模式 */
+  .writing-vertical-rl {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  /* 紙張紋理背景 */
+  .paper-texture {
+    background-image: url('https://www.transparenttextures.com/patterns/rice-paper.png');
+  }
+
+  /* 水墨濾鏡應用 */
+  .filter-ink-spread {
+    filter: url(#ink-spread);
+  }
+
+  .filter-brush-stroke {
+    filter: url(#brush-stroke);
   }
 }

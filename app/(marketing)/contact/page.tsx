@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-[#F9F8F4] text-[#1A1A1A] font-sans selection:bg-[#C59D5F] selection:text-white">
+    <div className="min-h-screen bg-[#F5F5F0] text-[#1A1A1A] font-sans selection:bg-[#C59D5F] selection:text-white">
       
       {/* Navigation Back */}
       <nav className="px-6 py-6 max-w-7xl mx-auto flex justify-between items-center">

@@ -1,7 +1,8 @@
 import React from "react"
 import type { Metadata, Viewport } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Inter, Playfair_Display, Noto_Serif_TC } from 'next/font/google'
 import './globals.css'
+import { GlobalFilters } from '@/components/global-filters'
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -11,6 +12,12 @@ const inter = Inter({
 const playfair = Playfair_Display({ 
   subsets: ["latin"],
   variable: '--font-playfair',
+})
+
+const notoSerifTC = Noto_Serif_TC({
+  subsets: ["latin"],
+  weight: ['300', '400', '600'],
+  variable: '--font-noto-serif-tc',
 })
 
 export const metadata: Metadata = {
@@ -37,7 +44,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#F9F8F4',
+  themeColor: '#F5F5F0',
 }
 
 export default function RootLayout({
@@ -46,8 +53,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
+    <html lang="zh-TW">
+      <body className={`${inter.variable} ${playfair.variable} ${notoSerifTC.variable} font-sans antialiased bg-[#F5F5F0] selection:bg-[#C59D5F] selection:text-white`}>
+        <GlobalFilters />
         {children}
       </body>
     </html>

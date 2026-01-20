@@ -1,87 +1,52 @@
 "use client"
 
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
-
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Abstract Rising Sun over Mountain - CSS Art */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        {/* Mountain Curve */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[200%] md:w-[150%] lg:w-full">
-          <svg 
-            viewBox="0 0 1440 400" 
-            className="w-full h-auto opacity-[0.08]"
-            preserveAspectRatio="xMidYMax slice"
-          >
-            <path
-              d="M0,400 Q360,100 720,200 T1440,100 L1440,400 Z"
-              fill="#1A1A1A"
-            />
-          </svg>
-        </div>
+    <section className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden bg-[#F5F5F0]">
+      {/* 背景紋理 */}
+      <div className="absolute inset-0 opacity-40 pointer-events-none mix-blend-multiply paper-texture"></div>
+      
+      <div className="relative z-10 max-w-screen-xl mx-auto w-full px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
         
-        {/* Rising Sun */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <div className="relative">
-            {/* Sun Glow */}
-            <div className="absolute inset-0 w-48 h-48 md:w-64 md:h-64 rounded-full bg-gold/10 blur-3xl" />
-            {/* Sun Circle */}
-            <div className="w-32 h-32 md:w-48 md:h-48 rounded-full bg-gradient-to-b from-gold/30 to-gold/5 border border-gold/20" />
-            {/* Sun Rays */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 md:w-56 md:h-56">
-              {[...Array(8)].map((_, i) => (
-                <div
-                  key={i}
-                  className="absolute top-1/2 left-1/2 w-px h-8 md:h-12 bg-gradient-to-t from-gold/40 to-transparent origin-bottom"
-                  style={{
-                    transform: `translate(-50%, -100%) rotate(${i * 45}deg) translateY(-24px)`,
-                  }}
-                />
-              ))}
+        {/* 左側：直書文字 */}
+        <div className="md:col-span-4 order-2 md:order-1 flex justify-center md:justify-start">
+          <div className="flex gap-8 md:gap-12 h-[60vh] md:h-[50vh] items-start select-none">
+            {/* 副標 */}
+            <h2 className="writing-vertical-rl text-lg md:text-xl text-[#1A1A1A]/60 tracking-[0.5em] font-light leading-loose border-l border-[#1A1A1A]/10 pl-6 h-full flex items-center">
+              <span>構建生生不息的商業善循環</span>
+            </h2>
+            
+            {/* 主標 - 使用 CIS 金色強調 */}
+            <h1 className="writing-vertical-rl text-4xl md:text-6xl text-[#1A1A1A] font-serif tracking-[0.2em] leading-relaxed font-medium h-full flex items-start">
+              <span className="text-[#C59D5F] drop-shadow-sm font-semibold">以古智定心</span>
+              <span className="mt-8">用科技賦能</span>
+            </h1>
+          </div>
+        </div>
+
+        {/* 右側：水墨意象 */}
+        <div className="md:col-span-8 order-1 md:order-2 flex items-center justify-center relative">
+          {/* 模擬水墨圓 (Ensō) */}
+          <div className="relative w-[300px] h-[300px] md:w-[500px] md:h-[500px] flex items-center justify-center">
+            {/* 外暈染 */}
+            <div className="absolute inset-0 bg-[#1A1A1A] rounded-full opacity-[0.03] scale-110 filter-ink-spread animate-pulse duration-[4000ms]"></div>
+            {/* 主墨跡 */}
+            <div className="absolute inset-4 border-[2px] md:border-[4px] border-[#1A1A1A]/80 rounded-full filter-brush-stroke opacity-80 rotate-12"></div>
+            {/* 金色線條 */}
+            <div className="absolute inset-8 border-[1px] border-[#C59D5F]/60 rounded-full filter-brush-stroke rotate-[-20deg]"></div>
+            
+            {/* 核心內容 */}
+            <div className="text-center relative z-10 p-8 backdrop-blur-sm bg-[#F5F5F0]/30 rounded-full">
+              <p className="font-serif text-lg md:text-2xl text-[#1A1A1A] mb-2">Ronsun<span className="text-[#C59D5F]">.</span></p>
+              <p className="text-xs uppercase tracking-[0.3em] text-[#1A1A1A]/50">AI & Wellness</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-ink leading-tight text-balance">
-          以古老智慧定心，<br />用未來科技賦能。
-        </h1>
-        
-        <p className="mt-6 md:mt-8 text-lg md:text-xl text-ink/70 max-w-2xl mx-auto leading-relaxed text-pretty">
-          從 AI 決策、身心健康貿易到 ESG 永續治理，容晟致力於構建一個生生不息的商業善循環。
-        </p>
-
-        <div className="mt-8 md:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href="/ecosystem">
-            <Button 
-              size="lg"
-              className="bg-ink text-paper hover:bg-gold hover:text-ink transition-all duration-300 group"
-            >
-              探索我們的生態系
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </Link>
-          <Link href="/esg">
-            <Button 
-              variant="outline"
-              size="lg"
-              className="border-ink text-ink hover:bg-ink hover:text-paper"
-            >
-              了解更多
-            </Button>
-          </Link>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-ink/40">
-        <span className="text-xs tracking-widest uppercase">Scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-ink/40 to-transparent" />
+      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-[#1A1A1A]/30 flex flex-col items-center gap-4">
+        <div className="w-px h-16 bg-gradient-to-b from-[#1A1A1A]/0 via-[#1A1A1A]/20 to-[#1A1A1A]/0"></div>
+        <span className="text-[10px] tracking-[0.3em] uppercase rotate-90 origin-center translate-y-2">Scroll</span>
       </div>
     </section>
   )
