@@ -51,8 +51,9 @@ export function Footer() {
                   width="80" 
                   height="80" 
                   fill="none" 
-                  className="stroke-[#F5F5F0] group-hover:stroke-[#C59D5F] transition-colors duration-500" 
-                  strokeWidth="2" 
+                  stroke="#F5F5F0"
+                  strokeWidth="2"
+                  className="group-hover:stroke-[#C59D5F] transition-colors duration-500" 
                 />
                 
                 {/* 中心 R 字母 - hover 時變金色 */}
@@ -62,8 +63,9 @@ export function Footer() {
                   fontFamily="serif" 
                   fontSize="48" 
                   fontWeight="bold" 
-                  className="fill-[#F5F5F0] group-hover:fill-[#C59D5F] transition-colors duration-500" 
+                  fill="#F5F5F0"
                   textAnchor="middle"
+                  className="group-hover:fill-[#C59D5F] transition-colors duration-500" 
                 >
                   R
                 </text>

@@ -28,8 +28,9 @@ export function Navbar() {
               width="80" 
               height="80" 
               fill="none" 
-              className="stroke-[#1A1A1A] group-hover:stroke-[#C59D5F] transition-colors duration-500" 
-              strokeWidth="2" 
+              stroke="#1A1A1A" 
+              strokeWidth="2"
+              className="group-hover:stroke-[#C59D5F] transition-colors duration-500" 
             />
             
             {/* 中心 R 字母 - hover 時變金色 */}
@@ -39,8 +40,9 @@ export function Navbar() {
               fontFamily="serif" 
               fontSize="48" 
               fontWeight="bold" 
-              className="fill-[#1A1A1A] group-hover:fill-[#C59D5F] transition-colors duration-500" 
+              fill="#1A1A1A"
               textAnchor="middle"
+              className="group-hover:fill-[#C59D5F] transition-colors duration-500" 
             >
               R
             </text>
