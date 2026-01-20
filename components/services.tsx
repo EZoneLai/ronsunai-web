@@ -98,7 +98,7 @@ export function Services() {
           </Link>
 
           {/* ESG Consulting - Square Card */}
-          <div className="group relative bg-paper rounded-3xl p-8 border border-sage hover:border-gold/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-gold/5 cursor-pointer overflow-hidden">
+          <Link href="/esg" className="group relative bg-paper rounded-3xl p-8 border border-sage hover:border-gold/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-gold/5 cursor-pointer overflow-hidden block">
             {/* Minimalist Chart Visual */}
             <div className="absolute bottom-4 right-4 w-24 h-24 opacity-10 pointer-events-none">
               <svg viewBox="0 0 100 100" className="w-full h-full">
@@ -131,7 +131,7 @@ export function Services() {
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export function Hero() {
   return (
@@ -64,13 +65,15 @@ export function Hero() {
             探索我們的生態系
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button 
-            variant="outline"
-            size="lg"
-            className="rounded-full border-ink/20 text-ink hover:bg-ink/5 px-8 py-6 text-base font-medium bg-transparent"
-          >
-            了解更多
-          </Button>
+          <Link href="/esg">
+            <Button 
+              variant="outline"
+              size="lg"
+              className="rounded-full border-ink/20 text-ink hover:bg-ink/5 px-8 py-6 text-base font-medium bg-transparent"
+            >
+              了解更多
+            </Button>
+          </Link>
         </div>
       </div>
 
