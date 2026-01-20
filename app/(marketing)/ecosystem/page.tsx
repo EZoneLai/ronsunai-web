@@ -8,7 +8,7 @@ export default function EcosystemPage() {
       {/* Navigation Back */}
       <nav className="px-6 py-6 max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/" className="inline-flex items-center gap-2 text-gray-500 hover:text-[#C59D5F] transition-colors group">
-          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> Back to Home
+          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> 返回首頁
         </Link>
         <span className="font-serif font-bold text-lg">RonsunAI</span>
       </nav>
@@ -144,9 +144,9 @@ export default function EcosystemPage() {
                 無論您是尋求商業突破，還是心靈平靜，容晟生態系都有您的位置。讓我們一起構建善的循環。
               </p>
               <div className="flex flex-col md:flex-row gap-4 relative z-10">
-                 <Link href="/wismath" className="px-6 py-3 bg-[#C59D5F] text-[#1A1A1A] rounded-full font-bold text-sm text-center hover:bg-white transition-colors">
+                 <a href="https://www.wismath.work" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-[#C59D5F] text-[#1A1A1A] rounded-full font-bold text-sm text-center hover:bg-white transition-colors">
                    體驗 Wismath
-                 </Link>
+                 </a>
                  <Link href="/wellness" className="px-6 py-3 bg-transparent border border-white/30 text-white rounded-full font-bold text-sm text-center hover:bg-white hover:text-[#1A1A1A] transition-colors">
                    逛逛好茶
                  </Link>
