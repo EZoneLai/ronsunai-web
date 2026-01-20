@@ -18,15 +18,13 @@ export function Navbar() {
       isScrolled ? 'bg-[#F5F5F0]/90 py-4 border-b border-[#1A1A1A]/5 backdrop-blur-sm' : 'bg-transparent py-8'
     }`}>
       <div className="mx-auto max-w-screen-xl px-6 md:px-12 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 group">
-          {/* Logo Box: 預設墨黑 (#1A1A1A) -> Hover 變 CIS金 (#C59D5F) */}
-          <div className="w-8 h-8 bg-[#1A1A1A] group-hover:bg-[#C59D5F] transition-colors duration-500 rounded-sm text-[#F5F5F0] flex items-center justify-center font-serif font-bold shadow-sm filter-brush-stroke">
-            R
-          </div>
-          {/* Brand Name: 預設墨黑 -> Hover 變 CIS金 */}
-          <span className="font-serif text-lg tracking-widest text-[#1A1A1A] group-hover:text-[#C59D5F] transition-colors duration-500">
-            RONSUN
-          </span>
+        <Link href="/" className="group">
+          {/* Logo - 簽名式設計，預設墨黑 (#1A1A1A) -> Hover 變 CIS金 (#C59D5F) */}
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Signature_sample.svg/1200px-Signature_sample.svg.png" 
+            alt="Ronsun Logo" 
+            className="h-8 opacity-30 invert-[.2] group-hover:opacity-50 transition-all duration-500 group-hover:brightness-[1.5] group-hover:hue-rotate-15" 
+          />
         </Link>
         
         <div className="hidden md:flex items-center gap-12">
