@@ -42,34 +42,8 @@ export function Footer() {
           {/* Logo + RONSUN 文字 */}
           <Link href="/" className="flex items-center gap-4 mb-6 group w-fit">
             {/* Logo - 方形簡潔設計 */}
-            <div className="w-12 h-12">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="w-full h-full transition-all duration-500">
-                {/* 外框 - hover 時變金色 */}
-                <rect 
-                  x="10" 
-                  y="10" 
-                  width="80" 
-                  height="80" 
-                  fill="none" 
-                  stroke="#F5F5F0"
-                  strokeWidth="2"
-                  className="group-hover:stroke-[#C59D5F] transition-colors duration-500" 
-                />
-                
-                {/* 中心 R 字母 - hover 時變金色 */}
-                <text 
-                  x="50" 
-                  y="65" 
-                  fontFamily="serif" 
-                  fontSize="48" 
-                  fontWeight="bold" 
-                  fill="#F5F5F0"
-                  textAnchor="middle"
-                  className="group-hover:fill-[#C59D5F] transition-colors duration-500" 
-                >
-                  R
-                </text>
-              </svg>
+            <div className="w-12 h-12 bg-[#F5F5F0] group-hover:bg-[#C59D5F] transition-colors duration-500 rounded-sm text-[#1A1A1A] flex items-center justify-center font-serif font-bold text-2xl shadow-sm">
+              R
             </div>
             <h2 className="font-serif text-3xl group-hover:text-[#C59D5F] transition-colors duration-500">Ronsun<span className="text-[#C59D5F]">.</span></h2>
           </Link>

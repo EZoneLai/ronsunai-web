@@ -22,11 +22,6 @@ export function Founder() {
             />
             <div className="absolute inset-0 bg-[#1A1A1A]/10 mix-blend-multiply"></div>
             <div className="absolute inset-4 border border-[#1A1A1A]/20"></div>
-            {/* 底部文字區 - 優化辨識度 */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1A1A1A]/80 via-[#1A1A1A]/50 to-transparent pt-16 pb-8 px-8">
-              <p className="text-3xl font-semibold text-white drop-shadow-lg tracking-wide" style={{textShadow: '0 2px 4px rgba(0,0,0,0.5)', fontFamily: 'var(--font-cormorant)'}}>Eugene Lai</p>
-              <p className="font-sans text-xs uppercase tracking-widest text-white/90 mt-1 drop-shadow-md" style={{textShadow: '0 1px 2px rgba(0,0,0,0.5)'}}>Founder & CEO</p>
-            </div>
           </div>
           {/* 裝飾元素 - 使用金光 */}
           <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#C59D5F]/20 rounded-full blur-xl"></div>
@@ -34,6 +29,14 @@ export function Founder() {
 
         {/* 文字區 */}
         <div className="w-full md:w-7/12 md:pl-12">
+          {/* 創辦人名字 */}
+          <div className="mb-8">
+            <h3 className="text-4xl md:text-5xl mb-2" style={{fontFamily: 'Cormorant Garamond, serif', fontWeight: 600, letterSpacing: '0.02em', color: '#1A1A1A'}}>
+              Eugene Lai
+            </h3>
+            <p className="text-sm uppercase tracking-widest text-[#1A1A1A]/60">Founder & CEO</p>
+          </div>
+          
           <Quote className="w-10 h-10 text-[#C59D5F] mb-8 opacity-50" strokeWidth={1} />
           
           <h2 className="font-serif text-3xl md:text-4xl text-[#1A1A1A] leading-normal mb-8">
@@ -48,49 +51,6 @@ export function Founder() {
             <p>
               容晟科技 (Ronsun) 的存在，是為了在混亂中建立秩序。無論是透過程式碼優化系統效率，還是一杯茶安頓身心，我們提供的都是一套完整的「生命解決方案」。
             </p>
-          </div>
-
-          <div className="mt-12">
-            {/* Eugene Lai 簽名風格 */}
-            <svg 
-              viewBox="0 0 200 60" 
-              xmlns="http://www.w3.org/2000/svg" 
-              className="h-12 w-auto opacity-40"
-            >
-              {/* E */}
-              <path 
-                d="M 10 15 Q 15 10, 25 15 Q 30 20, 25 30 Q 20 35, 15 32" 
-                fill="none" 
-                stroke="#1A1A1A" 
-                strokeWidth="1.5" 
-                strokeLinecap="round"
-              />
-              {/* L */}
-              <path 
-                d="M 35 12 Q 40 25, 38 35 L 42 38" 
-                fill="none" 
-                stroke="#1A1A1A" 
-                strokeWidth="1.5" 
-                strokeLinecap="round"
-              />
-              {/* ai - 連筆 */}
-              <path 
-                d="M 50 20 Q 55 15, 60 20 Q 62 25, 58 30 Q 65 28, 70 32" 
-                fill="none" 
-                stroke="#1A1A1A" 
-                strokeWidth="1.5" 
-                strokeLinecap="round"
-              />
-              {/* 裝飾線 */}
-              <path 
-                d="M 75 25 Q 100 20, 125 28 Q 150 35, 170 30" 
-                fill="none" 
-                stroke="#C59D5F" 
-                strokeWidth="0.8" 
-                strokeLinecap="round"
-                opacity="0.5"
-              />
-            </svg>
           </div>
         </div>
       </div>

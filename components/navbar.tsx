@@ -20,33 +20,9 @@ export function Navbar() {
       <div className="mx-auto max-w-screen-xl px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="group flex items-center gap-4">
           {/* Logo - 方形簡潔設計 */}
-          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 transition-all duration-500">
-            {/* 外框 - hover 時變金色 */}
-            <rect 
-              x="10" 
-              y="10" 
-              width="80" 
-              height="80" 
-              fill="none" 
-              stroke="#1A1A1A" 
-              strokeWidth="2"
-              className="group-hover:stroke-[#C59D5F] transition-colors duration-500" 
-            />
-            
-            {/* 中心 R 字母 - hover 時變金色 */}
-            <text 
-              x="50" 
-              y="65" 
-              fontFamily="serif" 
-              fontSize="48" 
-              fontWeight="bold" 
-              fill="#1A1A1A"
-              textAnchor="middle"
-              className="group-hover:fill-[#C59D5F] transition-colors duration-500" 
-            >
-              R
-            </text>
-          </svg>
+          <div className="w-8 h-8 bg-[#1A1A1A] group-hover:bg-[#C59D5F] transition-colors duration-500 rounded-sm text-[#F5F5F0] flex items-center justify-center font-serif font-bold shadow-sm">
+            R
+          </div>
           <h2 className="font-serif text-3xl text-[#1A1A1A] group-hover:text-[#C59D5F] transition-colors duration-500">Ronsun<span className="text-[#C59D5F]">.</span></h2>
         </Link>
         
