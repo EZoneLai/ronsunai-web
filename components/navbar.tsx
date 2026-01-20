@@ -15,12 +15,12 @@ export function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
-      isScrolled ? 'bg-[#F5F5F0]/90 py-4 border-b border-[#1A1A1A]/5 backdrop-blur-sm' : 'bg-transparent py-8'
+      isScrolled ? 'bg-[#F5F5F0]/30 py-4 border-b border-[#1A1A1A]/5 backdrop-blur-sm' : 'bg-transparent py-8'
     }`}>
       <div className="mx-auto max-w-screen-xl px-6 md:px-12 flex items-center justify-between">
-        <Link href="/" className="group">
+        <Link href="/" className="group flex items-center gap-4">
           {/* Logo - 方形簡潔設計 */}
-          <svg viewBox="0 0 100 100" className="h-8 w-8 transition-all duration-500">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 transition-all duration-500">
             {/* 外框 - hover 時變金色 */}
             <rect 
               x="10" 
@@ -45,6 +45,7 @@ export function Navbar() {
               R
             </text>
           </svg>
+          <h2 className="font-serif text-3xl text-[#1A1A1A] group-hover:text-[#C59D5F] transition-colors duration-500">Ronsun<span className="text-[#C59D5F]">.</span></h2>
         </Link>
         
         <div className="hidden md:flex items-center gap-12">

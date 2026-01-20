@@ -25,10 +25,24 @@ export function Footer() {
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 border-b border-[#F5F5F0]/10 pb-12">
         {/* Brand Column */}
         <div>
+          {/* Logo 圖片區域 - 與下方 Logo+RONSUN 等寬 */}
+          <div className="mb-6">
+            <div className="relative h-16 flex items-center justify-center">
+              <Image 
+                src="/ronsun_logo.png" 
+                alt="Ronsun Logo" 
+                width={120} 
+                height={64}
+                className="object-contain brightness-0 invert opacity-90"
+              />
+            </div>
+          </div>
+          
+          {/* Logo + RONSUN 文字 */}
           <div className="flex items-center gap-4 mb-6">
             {/* Logo - 方形簡潔設計 */}
             <div className="w-12 h-12 group cursor-pointer">
-              <svg viewBox="0 0 100 100" className="w-full h-full transition-all duration-500">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="w-full h-full transition-all duration-500">
                 {/* 外框 - hover 時變金色 */}
                 <rect 
                   x="10" 
