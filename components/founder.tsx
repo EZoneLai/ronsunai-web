@@ -24,7 +24,7 @@ export function Founder() {
             <div className="absolute inset-4 border border-[#1A1A1A]/20"></div>
             {/* 底部文字區 - 優化辨識度 */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1A1A1A]/80 via-[#1A1A1A]/50 to-transparent pt-16 pb-8 px-8">
-              <p className="font-sans text-2xl font-semibold text-white drop-shadow-lg" style={{textShadow: '0 2px 4px rgba(0,0,0,0.5)'}}>Eugene Lai</p>
+              <p className="font-serif text-3xl font-bold text-white drop-shadow-lg" style={{textShadow: '0 2px 4px rgba(0,0,0,0.5)', fontFamily: 'Playfair Display, serif'}}>Eugene Lai</p>
               <p className="font-sans text-xs uppercase tracking-widest text-white/90 mt-1 drop-shadow-md" style={{textShadow: '0 1px 2px rgba(0,0,0,0.5)'}}>Founder & CEO</p>
             </div>
           </div>

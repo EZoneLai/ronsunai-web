@@ -113,76 +113,85 @@ export default function WellnessPage() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-1 gap-6">
-            {/* Vintage List */}
-            <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse">
-                <thead>
-                  <tr className="border-b border-gray-700 text-xs uppercase tracking-wider text-gray-500">
-                    <th className="py-4 pl-4">Year & Name (年份/茶名)</th>
-                    <th className="py-4">Type (工藝)</th>
-                    <th className="py-4">Description (風味筆記)</th>
-                    <th className="py-4 text-right pr-4">Price</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-800">
-                  
-                  {/* Item 1 */}
-                  <tr className="group hover:bg-white/5 transition-colors">
-                    <td className="py-6 pl-4 font-serif text-lg text-white">1980 班禪景茶 (Panchen)</td>
-                    <td className="py-6 text-[#C59D5F]">生沱 (Raw)</td>
-                    <td className="py-6 text-base max-w-md leading-[1.8] text-gray-200">
-                      稀世珍品。歷經 40 多年轉化，茶氣強勁而內斂，帶有獨特的藥香與參香。
-                      這是喝一泡少一泡的歷史液體，展現了時間最完美的陳化工藝。
-                    </td>
-                    <td className="py-6 text-right pr-4 font-bold text-white">NT$ 4,000 <span className="text-xs font-normal text-gray-500">/ 250g</span></td>
-                  </tr>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Item 1 */}
+            <div className="group border border-gray-800 hover:border-[#C59D5F] pb-8 p-6 rounded-2xl transition-all bg-[#1A1A1A]/50 hover:bg-[#1A1A1A]/80">
+              <div className="flex justify-between items-baseline mb-3">
+                <h3 className="text-xl font-bold text-white">1980 班禪景茶 (Panchen)</h3>
+                <span className="text-[#C59D5F] font-bold text-sm">生沱 (Raw)</span>
+              </div>
+              <p className="text-base text-gray-200 leading-[1.8] mb-4">
+                稀世珍品。歷經 40 多年轉化，茶氣強勁而內斂，帶有獨特的藥香與參香。
+                這是喝一泡少一泡的歷史液體，展現了時間最完美的陳化工藝。
+              </p>
+              <div className="flex justify-between items-center pt-4 border-t border-gray-800">
+                <span className="text-white font-bold text-lg">NT$ 4,000</span>
+                <span className="text-xs text-gray-500">/ 250g</span>
+              </div>
+            </div>
 
-                  {/* Item 2 */}
-                  <tr className="group hover:bg-white/5 transition-colors">
-                    <td className="py-6 pl-4 font-serif text-lg text-white">2005 永德大樹沱 (Yongde)</td>
-                    <td className="py-6 text-[#C59D5F]">生沱 (Raw)</td>
-                    <td className="py-6 text-base max-w-md leading-[1.8] text-gray-200">
-                      選用永德茶區大樹茶菁。20 年陳期使其褪去苦澀，轉出梅子韻與木質香。
-                      茶湯橙紅透亮，入口生津，是感受中期老生茶的最佳入門款。
-                    </td>
-                    <td className="py-6 text-right pr-4 font-bold text-white">NT$ 1,500 <span className="text-xs font-normal text-gray-500">/ 100g</span></td>
-                  </tr>
+            {/* Item 2 */}
+            <div className="group border border-gray-800 hover:border-[#C59D5F] pb-8 p-6 rounded-2xl transition-all bg-[#1A1A1A]/50 hover:bg-[#1A1A1A]/80">
+              <div className="flex justify-between items-baseline mb-3">
+                <h3 className="text-xl font-bold text-white">2005 永德大樹沱 (Yongde)</h3>
+                <span className="text-[#C59D5F] font-bold text-sm">生沱 (Raw)</span>
+              </div>
+              <p className="text-base text-gray-200 leading-[1.8] mb-4">
+                選用永德茶區大樹茶菁。20 年陳期使其褪去苦澀，轉出梅子韻與木質香。
+                茶湯橙紅透亮，入口生津，是感受中期老生茶的最佳入門款。
+              </p>
+              <div className="flex justify-between items-center pt-4 border-t border-gray-800">
+                <span className="text-white font-bold text-lg">NT$ 1,500</span>
+                <span className="text-xs text-gray-500">/ 100g</span>
+              </div>
+            </div>
 
-                  {/* Item 3 */}
-                  <tr className="group hover:bg-white/5 transition-colors">
-                    <td className="py-6 pl-4 font-serif text-lg text-white">2000 雲南江城圓茶 (Jiangcheng)</td>
-                    <td className="py-6 text-[#C59D5F]">生餅 (Raw)</td>
-                    <td className="py-6 text-base max-w-md leading-[1.8] text-gray-200">
-                      經典江城春尖料。乾倉存放，香氣純正高揚，水路細膩。
-                      展現了易武茶區特有的柔美與豐富膠質，回甘持久。
-                    </td>
-                    <td className="py-6 text-right pr-4 font-bold text-white">NT$ 6,500 <span className="text-xs font-normal text-gray-500">/ 357g</span></td>
-                  </tr>
+            {/* Item 3 */}
+            <div className="group border border-gray-800 hover:border-[#C59D5F] pb-8 p-6 rounded-2xl transition-all bg-[#1A1A1A]/50 hover:bg-[#1A1A1A]/80">
+              <div className="flex justify-between items-baseline mb-3">
+                <h3 className="text-xl font-bold text-white">2000 雲南江城圓茶 (Jiangcheng)</h3>
+                <span className="text-[#C59D5F] font-bold text-sm">生餅 (Raw)</span>
+              </div>
+              <p className="text-base text-gray-200 leading-[1.8] mb-4">
+                經典江城春尖料。乾倉存放，香氣純正高揚，水路細膩。
+                展現了易武茶區特有的柔美與豐富膠質，回甘持久。
+              </p>
+              <div className="flex justify-between items-center pt-4 border-t border-gray-800">
+                <span className="text-white font-bold text-lg">NT$ 6,500</span>
+                <span className="text-xs text-gray-500">/ 357g</span>
+              </div>
+            </div>
 
-                  {/* Item 4 */}
-                  <tr className="group hover:bg-white/5 transition-colors">
-                    <td className="py-6 pl-4 font-serif text-lg text-white">2000/2002 7581 熟磚 (7581 Brick)</td>
-                    <td className="py-6 text-[#C59D5F]">熟磚 (Ripe)</td>
-                    <td className="py-6 text-base max-w-md leading-[1.8] text-gray-200">
-                      崑明茶廠經典配方。棗香濃郁，口感滑糯醇厚，毫無堆味。
-                      經過 20 多年轉化，茶性溫和溫潤，最適合暖胃養生。
-                    </td>
-                    <td className="py-6 text-right pr-4 font-bold text-white">NT$ 2,000 <span className="text-xs font-normal text-gray-500">/ 250g</span></td>
-                  </tr>
-                   {/* Item 5 */}
-                   <tr className="group hover:bg-white/5 transition-colors">
-                    <td className="py-6 pl-4 font-serif text-lg text-white">1997 景谷磚 (Jinggu Brick)</td>
-                    <td className="py-6 text-[#C59D5F]">熟磚 (Ripe)</td>
-                    <td className="py-6 text-base max-w-md leading-[1.8] text-gray-200">
-                       近 30 年老熟茶。陳香顯著，湯色如紅酒般深邃通透。
-                       入口即化，帶有老木頭的沈穩香氣，是行家收藏級的日常口糧。
-                    </td>
-                    <td className="py-6 text-right pr-4 font-bold text-white">NT$ 3,500 <span className="text-xs font-normal text-gray-500">/ 250g</span></td>
-                  </tr>
+            {/* Item 4 */}
+            <div className="group border border-gray-800 hover:border-[#C59D5F] pb-8 p-6 rounded-2xl transition-all bg-[#1A1A1A]/50 hover:bg-[#1A1A1A]/80">
+              <div className="flex justify-between items-baseline mb-3">
+                <h3 className="text-xl font-bold text-white">2000/2002 7581 熟磚 (7581 Brick)</h3>
+                <span className="text-[#C59D5F] font-bold text-sm">熟磚 (Ripe)</span>
+              </div>
+              <p className="text-base text-gray-200 leading-[1.8] mb-4">
+                崑明茶廠經典配方。棗香濃郁，口感滑糯醇厚，毫無堆味。
+                經過 20 多年轉化，茶性溫和溫潤，最適合暖胃養生。
+              </p>
+              <div className="flex justify-between items-center pt-4 border-t border-gray-800">
+                <span className="text-white font-bold text-lg">NT$ 2,000</span>
+                <span className="text-xs text-gray-500">/ 250g</span>
+              </div>
+            </div>
 
-                </tbody>
-              </table>
+            {/* Item 5 */}
+            <div className="group border border-gray-800 hover:border-[#C59D5F] pb-8 p-6 rounded-2xl transition-all bg-[#1A1A1A]/50 hover:bg-[#1A1A1A]/80">
+              <div className="flex justify-between items-baseline mb-3">
+                <h3 className="text-xl font-bold text-white">1997 景谷磚 (Jinggu Brick)</h3>
+                <span className="text-[#C59D5F] font-bold text-sm">熟磚 (Ripe)</span>
+              </div>
+              <p className="text-base text-gray-200 leading-[1.8] mb-4">
+                近 30 年老熟茶。陳香顯著，湯色如紅酒般深邃通透。
+                入口即化，帶有老木頭的沈穩香氣，是行家收藏級的日常口糧。
+              </p>
+              <div className="flex justify-between items-center pt-4 border-t border-gray-800">
+                <span className="text-white font-bold text-lg">NT$ 3,500</span>
+                <span className="text-xs text-gray-500">/ 250g</span>
+              </div>
             </div>
           </div>
         </div>

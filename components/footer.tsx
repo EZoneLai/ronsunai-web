@@ -25,13 +25,13 @@ export function Footer() {
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 border-b border-[#F5F5F0]/10 pb-12">
         {/* Brand Column */}
         <div>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="relative w-8 h-8">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="relative w-12 h-12">
               <Image 
                 src="/ronsun_logo.png" 
                 alt="RonsunAI Logo" 
-                width={32} 
-                height={32}
+                width={48} 
+                height={48}
                 className="object-contain brightness-0 invert"
               />
             </div>
