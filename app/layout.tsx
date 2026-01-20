@@ -1,6 +1,6 @@
 import React from "react"
 import type { Metadata, Viewport } from 'next'
-import { Inter, Playfair_Display, Noto_Serif_TC } from 'next/font/google'
+import { Inter, Playfair_Display, Noto_Serif_TC, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 import { GlobalFilters } from '@/components/global-filters'
 
@@ -12,6 +12,12 @@ const inter = Inter({
 const playfair = Playfair_Display({ 
   subsets: ["latin"],
   variable: '--font-playfair',
+})
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ['300', '400', '600', '700'],
+  variable: '--font-cormorant',
 })
 
 const notoSerifTC = Noto_Serif_TC({
@@ -54,7 +60,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-TW">
-      <body className={`${inter.variable} ${playfair.variable} ${notoSerifTC.variable} font-sans antialiased bg-[#F5F5F0] selection:bg-[#C59D5F] selection:text-white`}>
+      <body className={`${inter.variable} ${playfair.variable} ${cormorant.variable} ${notoSerifTC.variable} font-sans antialiased bg-[#F5F5F0] selection:bg-[#C59D5F] selection:text-white`}>
         <GlobalFilters />
         {children}
       </body>
