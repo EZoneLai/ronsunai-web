@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,7 +14,7 @@ export function Navbar() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <div className="relative flex items-center justify-center w-10 h-10">
               <Image 
                 src="/ronsun_logo.png" 
@@ -26,22 +27,24 @@ export function Navbar() {
             <span className="font-serif text-xl font-semibold text-ink tracking-tight">
               RonsunAI
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#philosophy" className="text-sm text-ink/70 hover:text-ink transition-colors">
+            <a href="/#philosophy" className="text-sm text-ink/70 hover:text-ink transition-colors">
               品牌哲學
             </a>
-            <a href="#services" className="text-sm text-ink/70 hover:text-ink transition-colors">
+            <a href="/#services" className="text-sm text-ink/70 hover:text-ink transition-colors">
               服務項目
             </a>
-            <a href="#founder" className="text-sm text-ink/70 hover:text-ink transition-colors">
+            <a href="/#founder" className="text-sm text-ink/70 hover:text-ink transition-colors">
               關於我們
             </a>
-            <Button className="rounded-full bg-ink text-paper hover:bg-ink/90 px-6">
-              聯絡我們
-            </Button>
+            <Link href="/contact">
+              <Button className="rounded-full bg-ink text-paper hover:bg-ink/90 px-6">
+                聯絡我們
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -60,29 +63,31 @@ export function Navbar() {
           <div className="md:hidden py-4 border-t border-sage/50">
             <div className="flex flex-col gap-4">
               <a 
-                href="#philosophy" 
+                href="/#philosophy" 
                 className="text-sm text-ink/70 hover:text-ink transition-colors px-2 py-2"
                 onClick={() => setIsOpen(false)}
               >
                 品牌哲學
               </a>
               <a 
-                href="#services" 
+                href="/#services" 
                 className="text-sm text-ink/70 hover:text-ink transition-colors px-2 py-2"
                 onClick={() => setIsOpen(false)}
               >
                 服務項目
               </a>
               <a 
-                href="#founder" 
+                href="/#founder" 
                 className="text-sm text-ink/70 hover:text-ink transition-colors px-2 py-2"
                 onClick={() => setIsOpen(false)}
               >
                 關於我們
               </a>
-              <Button className="rounded-full bg-ink text-paper hover:bg-ink/90 w-full mt-2">
-                聯絡我們
-              </Button>
+              <Link href="/contact" onClick={() => setIsOpen(false)}>
+                <Button className="rounded-full bg-ink text-paper hover:bg-ink/90 w-full mt-2">
+                  聯絡我們
+                </Button>
+              </Link>
             </div>
           </div>
         )}

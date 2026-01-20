@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { ArrowLeft, Scale, Users, Sprout, Building2, FileCheck, BarChart3, Globe, ShieldCheck, ArrowRight, Leaf, Target, TrendingUp, Briefcase } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Footer } from "@/components/footer"
 
 export default function EsgPage() {
   return (
@@ -197,13 +198,15 @@ export default function EsgPage() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button 
-                  size="lg"
-                  className="rounded-full bg-[#1A1A1A] text-white hover:bg-[#C59D5F] px-10 py-6 text-base font-medium group shadow-lg"
-                >
-                  預約 ESG 診斷諮詢
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                <Link href="/contact">
+                  <Button 
+                    size="lg"
+                    className="rounded-full bg-[#1A1A1A] text-white hover:bg-[#C59D5F] px-10 py-6 text-base font-medium group shadow-lg"
+                  >
+                    預約 ESG 診斷諮詢
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
                 <button className="text-[#1A1A1A] px-8 py-3 rounded-full font-medium hover:text-[#C59D5F] transition-colors inline-flex items-center gap-2">
                   <FileCheck className="w-4 h-4" /> 下載服務簡介
                 </button>
@@ -213,6 +216,7 @@ export default function EsgPage() {
         </div>
       </section>
 
+      <Footer />
     </div>
   )
 }

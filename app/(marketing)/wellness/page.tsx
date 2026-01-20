@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ArrowLeft, Coffee, Droplets, FlaskConical, Leaf, Wine, Mountain, Clock, Star, Sparkles, Gift, ExternalLink } from "lucide-react"
+import { Footer } from "@/components/footer"
 
 export default function WellnessPage() {
   return (
@@ -378,6 +379,7 @@ export default function WellnessPage() {
         </div>
       </section>
 
+      <Footer />
     </div>
   )
 }

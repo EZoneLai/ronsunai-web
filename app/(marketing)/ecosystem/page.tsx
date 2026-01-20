@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ArrowLeft, Orbit, Zap, Leaf, BrainCircuit, RefreshCw, Network, HeartHandshake, ArrowRight } from "lucide-react"
+import { Footer } from "@/components/footer"
 
 export default function EcosystemPage() {
   return (
@@ -157,6 +158,7 @@ export default function EcosystemPage() {
         </div>
       </section>
 
+      <Footer />
     </div>
   )
 }

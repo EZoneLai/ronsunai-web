@@ -5,13 +5,13 @@ import Image from "next/image"
 const footerLinks = {
   services: [
     { name: "Wismath AI", href: "https://www.wismath.work" },
-    { name: "養生貿易", href: "#" },
-    { name: "ESG 顧問", href: "#" },
+    { name: "養生貿易", href: "/wellness" },
+    { name: "ESG 顧問", href: "/esg" },
   ],
   company: [
-    { name: "關於我們", href: "#" },
-    { name: "我們的哲學", href: "#philosophy" },
-    { name: "聯絡我們", href: "#" },
+    { name: "關於我們", href: "/#founder" },
+    { name: "我們的哲學", href: "/#philosophy" },
+    { name: "聯絡我們", href: "/contact" },
   ],
   legal: [
     { name: "隱私權政策", href: "#" },
