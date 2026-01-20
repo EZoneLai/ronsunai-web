@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ArrowLeft, MapPin, Phone, Mail, MessageSquare, Clock } from "lucide-react"
+import { Footer } from "@/components/footer"
 
 export default function ContactPage() {
   return (
@@ -98,11 +99,7 @@ export default function ContactPage() {
          ></iframe>
       </section>
 
-      {/* Footer Simple */}
-      <footer className="bg-[#1A1A1A] text-gray-500 py-8 text-center text-sm">
-        <p>© 2026 Ronsun Technology Co., Ltd. All Rights Reserved.</p>
-      </footer>
-
+      <Footer />
     </div>
   )
 }
