@@ -1,64 +1,52 @@
-"use client"
-
 import { Quote } from "lucide-react"
 import Image from "next/image"
 
 export function Founder() {
   return (
-    <section id="founder" className="py-24 md:py-32 bg-paper">
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Photo */}
-          <div className="relative order-1 lg:order-1">
-            <div className="relative aspect-[4/5] max-w-md mx-auto lg:mx-0">
-              {/* Decorative Frame */}
-              <div className="absolute -inset-4 rounded-3xl border border-gold/20" />
-              <div className="absolute -inset-8 rounded-3xl border border-sage/50" />
-              
-              {/* Image Container */}
-              <div className="relative w-full h-full rounded-2xl bg-sage/30 overflow-hidden">
-                <Image 
-                  src="/eugene_photo.jpg" 
-                  alt="賴宥均 Eugene Lai - 創辦人暨執行長" 
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  priority
-                />
-                
-                {/* Subtle texture overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-paper/20 to-transparent" />
-              </div>
+    <section id="founder" className="py-32 bg-[#F5F5F0] relative overflow-hidden">
+      {/* 裝飾性背景字 */}
+      <span className="absolute -left-20 top-20 text-[20vw] leading-none font-serif text-[#1A1A1A]/[0.02] pointer-events-none select-none">
+        FOUNDER
+      </span>
 
-              {/* Accent Element */}
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-2xl bg-gold/10 border border-gold/20" />
+      <div className="max-w-screen-xl mx-auto px-6 md:px-12 flex flex-col md:flex-row gap-16 items-center">
+        
+        {/* 照片區 */}
+        <div className="w-full md:w-5/12 relative">
+          <div className="aspect-[3/4] bg-[#EAEAE5] relative overflow-hidden rounded-sm filter-brush-stroke">
+            <Image
+              src="/eugene_photo.jpg"
+              alt="Eugene Lai - Founder"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-[#1A1A1A]/10 mix-blend-multiply"></div>
+            <div className="absolute inset-4 border border-[#1A1A1A]/20"></div>
+            <div className="absolute bottom-8 left-8 right-8 text-white">
+              <p className="font-serif text-2xl">Eugene Lai</p>
+              <p className="text-xs uppercase tracking-widest opacity-80 mt-1">Founder & CEO</p>
             </div>
           </div>
+          {/* 裝飾元素 - 使用金光 */}
+          <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#C59D5F]/20 rounded-full blur-xl"></div>
+        </div>
 
-          {/* Quote */}
-          <div className="order-2 lg:order-2">
-            <div className="relative">
-              {/* Quote Icon */}
-              <Quote className="w-12 h-12 text-gold/30 mb-6" strokeWidth={1} />
-              
-              {/* Quote Text */}
-              <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl text-ink leading-relaxed text-pretty">
-                科技讓我們走得更快，而智慧讓我們走得更遠。
-              </blockquote>
-              
-              <p className="mt-6 text-ink/70 text-lg leading-relaxed">
-                我是一名工程師，也是一位茶人；我研究大數據，也鑽研古老易經。這看似矛盾，實則一體。容晟科技的存在，是為了在混亂的時代中，提供一套完整的「生命解決方案」。無論是透過程式碼、一杯茶，還是一份 ESG 報告，我們都在協助您提升頻率，回到身心與事業的完美平衡。
-              </p>
+        {/* 文字區 */}
+        <div className="w-full md:w-7/12 md:pl-12">
+          <Quote className="w-10 h-10 text-[#C59D5F] mb-8 opacity-50" strokeWidth={1} />
+          
+          <h2 className="font-serif text-3xl md:text-4xl text-[#1A1A1A] leading-normal mb-8">
+            科技讓我們走得更快，<br />
+            <span className="italic text-[#1A1A1A]/60">智慧讓我們走得更遠。</span>
+          </h2>
 
-              {/* Attribution */}
-              <div className="mt-8 pt-8 border-t border-sage">
-                <p className="font-serif text-xl text-ink">賴宥均 Eugene Lai</p>
-                <p className="text-ink/60 mt-1">創辦人暨執行長</p>
-              </div>
-
-              {/* Decorative Line */}
-              <div className="absolute -left-8 top-0 bottom-0 w-px bg-gradient-to-b from-gold/40 via-gold/20 to-transparent hidden lg:block" />
-            </div>
+          <div className="space-y-6 text-[#1A1A1A]/70 font-light leading-loose text-justify">
+            <p>
+              我是一名工程師，也是一位茶人；我研究大數據，也鑽研古老易經。這看似矛盾，實則一體。在快速變遷的數位時代，我們往往迷失了方向。
+            </p>
+            <p>
+              容晟科技 (Ronsun) 的存在，是為了在混亂中建立秩序。無論是透過程式碼優化系統效率，還是一杯茶安頓身心，我們提供的都是一套完整的「生命解決方案」。
+            </p>
           </div>
         </div>
       </div>
