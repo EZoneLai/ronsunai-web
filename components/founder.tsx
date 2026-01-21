@@ -34,7 +34,6 @@ export function Founder() {
             <h3 className="text-4xl md:text-5xl mb-2" style={{fontFamily: 'Cormorant Garamond, serif', fontWeight: 600, letterSpacing: '0.02em', color: '#1A1A1A'}}>
               Eugene Lai
             </h3>
-            <p className="text-sm uppercase tracking-widest text-[#1A1A1A]/60">Founder & CEO</p>
           </div>
           
           <Quote className="w-10 h-10 text-[#C59D5F] mb-8 opacity-50" strokeWidth={1} />
