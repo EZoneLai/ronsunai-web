@@ -41,9 +41,23 @@ export default function ContactPage() {
             <h3 className="text-xl font-bold mb-2">Visit Us</h3>
             <p className="text-gray-500 text-sm mb-4">歡迎預約來訪品茶與諮詢</p>
             <div className="text-gray-800 font-medium leading-relaxed">
-              台北市士林區大南路115號2樓之6
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=台北市士林區大南路115號2樓之6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#C59D5F] underline transition-colors"
+              >
+                台北市士林區大南路115號2樓之6
+              </a>
               <span className="block text-sm text-gray-500 mt-2">
-                2F-6, No. 115, Danan Rd., <br/> Shilin Dist., Taipei City
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=2F-6,+No.+115,+Danan+Rd.,+Shilin+Dist.,+Taipei+City"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#C59D5F] underline transition-colors"
+                >
+                  2F-6, No. 115, Danan Rd., <br/> Shilin Dist., Taipei City
+                </a>
               </span>
             </div>
           </div>
@@ -56,11 +70,32 @@ export default function ContactPage() {
             <h3 className="text-xl font-bold mb-2">Call Us</h3>
             <p className="text-gray-500 text-sm mb-4">週一至週五 10:00 - 18:00</p>
             <div className="text-gray-800 font-medium text-lg">
-              <a href="tel:+886921978006" className="hover:text-[#C59D5F] transition-colors">
+              <a
+                href="tel:+886921978006"
+                className="hover:text-[#C59D5F] underline transition-colors"
+              >
                 +886 921-978-006
               </a>
               <div className="text-sm text-gray-500 mt-2 font-serif">
                 賴宥均 (Eugene Lai)
+              </div>
+              <div className="flex flex-col gap-2 mt-4">
+                <a
+                  href="https://line.me/R/ti/p/~EZONELAI#~"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#06C755] text-white font-bold rounded-full px-4 py-2 text-sm hover:bg-[#059944] transition-colors"
+                >
+                  加入私人 LINE
+                </a>
+                <a
+                  href="https://line.me/R/ti/p/@815ndzxp#~"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#06C755] text-white font-bold rounded-full px-4 py-2 text-sm hover:bg-[#059944] transition-colors"
+                >
+                  Line@ 預約
+                </a>
               </div>
             </div>
           </div>
@@ -73,10 +108,16 @@ export default function ContactPage() {
             <h3 className="text-xl font-bold mb-2">Email Us</h3>
             <p className="text-gray-500 text-sm mb-4">專案合作與業務洽詢</p>
             <div className="text-gray-800 font-medium text-lg flex flex-col gap-1">
-              <a href="mailto:contact@ronsunai.com" className="hover:text-[#C59D5F] transition-colors">
+              <a
+                href="mailto:contact@ronsunai.com"
+                className="hover:text-[#C59D5F] underline transition-colors"
+              >
                 contact@ronsunai.com
               </a>
-              <a href="mailto:ezonelai@gmail.com" className="hover:text-[#C59D5F] transition-colors">
+              <a
+                href="mailto:ezonelai@gmail.com"
+                className="hover:text-[#C59D5F] underline transition-colors"
+              >
                 ezonelai@gmail.com
               </a>
               <div className="text-sm text-gray-500 mt-2">
