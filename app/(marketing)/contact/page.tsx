@@ -72,9 +72,12 @@ export default function ContactPage() {
             </div>
             <h3 className="text-xl font-bold mb-2">Email Us</h3>
             <p className="text-gray-500 text-sm mb-4">專案合作與業務洽詢</p>
-            <div className="text-gray-800 font-medium text-lg">
+            <div className="text-gray-800 font-medium text-lg flex flex-col gap-1">
               <a href="mailto:contact@ronsunai.com" className="hover:text-[#C59D5F] transition-colors">
                 contact@ronsunai.com
+              </a>
+              <a href="mailto:ezonelai@gmail.com" className="hover:text-[#C59D5F] transition-colors">
+                ezonelai@gmail.com
               </a>
               <div className="text-sm text-gray-500 mt-2">
                 我們會於 24 小時內回覆
