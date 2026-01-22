@@ -48,7 +48,7 @@ export default function PrivacyPage() {
                 <p className="font-bold text-[#1A1A1A] mb-1">台灣《個人資料保護法》</p>
                 <p className="text-xs text-gray-500">Personal Data Protection Act (PDPA)</p>
               </a>
-              <a href="https://gdpr-info.eu/" target="_blank" rel="noopener noreferrer" className="bg-[#F9F8F4] p-4 rounded-xl border border-gray-200 hover:border-[#C59D5F] transition-colors">
+              <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679" target="_blank" rel="noopener noreferrer" className="bg-[#F9F8F4] p-4 rounded-xl border border-gray-200 hover:border-[#C59D5F] transition-colors">
                 <p className="font-bold text-[#1A1A1A] mb-1">歐盟《一般資料保護規則》</p>
                 <p className="text-xs text-gray-500">General Data Protection Regulation (GDPR)</p>
               </a>
