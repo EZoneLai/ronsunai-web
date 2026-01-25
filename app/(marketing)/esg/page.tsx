@@ -178,6 +178,96 @@ export default function EsgPage() {
         </div>
       </section>
 
+      {/* Social Impact & Sustainability Fund Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="mx-auto max-w-7xl px-6">
+          
+          <div className="mb-16 text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-4">
+              Social Impact & Sustainability Fund
+            </h2>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+              我們相信，企業的價值不在於獲利多少，而是在於能為世界帶來多少正向改變。RonsunAI 透過「永續基金」機制，將每一份商業合作轉化為具體的社會貢獻。
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
+            
+            <div className="space-y-8">
+              <div className="flex gap-4">
+                <div className="flex-none flex items-center justify-center w-12 h-12 rounded-full bg-slate-900 text-white font-serif text-xl">
+                  1
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">善循環撥款機制</h3>
+                  <p className="text-slate-600">
+                    RonsunAI 承諾將每年營收之固定比例（1-3%）撥入「Ronsun 永續基金」，專款專用於環境保護、數位落差消除與社會公益專案。
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-none flex items-center justify-center w-12 h-12 rounded-full bg-slate-900 text-white font-serif text-xl">
+                  2
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">碳中和與植樹計畫</h3>
+                  <p className="text-slate-600">
+                    除了協助企業進行 ISO 碳盤查，我們更直接參與國際認證的造林計畫。每完成一項 ESG 顧問專案，我們將以客戶名義種下原生種樹木，落實真正的「淨零排放」。
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-none flex items-center justify-center w-12 h-12 rounded-full bg-slate-900 text-white font-serif text-xl">
+                  3
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">數位轉型公益支持</h3>
+                  <p className="text-slate-600">
+                    我們運用 Wismath AI 技術協助非營利組織（NPO）進行組織健檢，並提供免費的數位名片系統，減少傳統紙張浪費，讓公益團體也能擁有高效能治理。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-8 rounded-3xl shadow-xl border border-slate-100">
+              <h4 className="text-sm font-semibold text-slate-400 uppercase tracking-widest mb-6">Current Impact Dashboard</h4>
+              
+              <div className="space-y-6">
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="text-slate-700 font-medium">累積捐贈金額 (Social Donation)</span>
+                    <span className="text-slate-900 font-bold">NT$ 128,000</span>
+                  </div>
+                  <div className="w-full bg-slate-100 h-2 rounded-full">
+                    <div className="bg-slate-900 h-2 rounded-full" style={{width: "75%"}}></div>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4 pt-4">
+                  <div className="bg-slate-50 p-4 rounded-2xl text-center">
+                    <p className="text-slate-500 text-xs mb-1">節省紙質名片</p>
+                    <p className="text-2xl font-bold text-slate-900">5,000+</p>
+                  </div>
+                  <div className="bg-slate-50 p-4 rounded-2xl text-center">
+                    <p className="text-slate-500 text-xs mb-1">協助減碳量 (kg)</p>
+                    <p className="text-2xl font-bold text-slate-900">650</p>
+                  </div>
+                </div>
+
+                <div className="border-t border-dashed border-slate-200 pt-6 mt-6">
+                  <p className="text-xs text-slate-400 leading-relaxed italic">
+                    * 註：以上數據包含 RonsunAI 內部提撥與合作夥伴之 ESG 聯名專案貢獻。我們致力於將每一筆預算轉化為可衡量的社會價值。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* Philosophy Section */}
       <section className="px-6 py-24 bg-gradient-to-b from-[#F9F8F4] to-white">
         <div className="max-w-4xl mx-auto">
