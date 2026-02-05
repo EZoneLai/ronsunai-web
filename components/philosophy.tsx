@@ -104,6 +104,17 @@ export function Philosophy() {
           </div>
         </div>
       </div>
+        {/* 品牌識別區：logo、標題、詩句 */}
+        <div className="max-w-screen-md mx-auto px-6 md:px-12 mb-12 flex flex-col items-center gap-6">
+          {/* 標題 */}
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#1A1A1A] mb-4 text-center">容晟之道</h1>
+          {/* Logo 圖片（縮小至50vw，最大320px，最小120px） */}
+          <img src="/rslogo.png" alt="Ronsun Logo" className="mb-4 object-contain" style={{ width: '50vw', maxWidth: '320px', minWidth: '120px' }} />
+          {/* 詩句（中英文，響應式文字大小） */}
+          <p className="text-lg md:text-xl lg:text-2xl text-[#C59D5F] font-serif font-semibold text-center tracking-widest mb-1">以容為基，承載大地責任</p>
+          <p className="text-lg md:text-xl lg:text-2xl text-[#C59D5F] font-serif font-semibold text-center tracking-widest mb-1">以晟為引，智啟未來光明</p>
+          <p className="text-base md:text-lg lg:text-xl text-[#1A1A1A]/50 font-serif text-center tracking-widest mb-1">Rooted in responsibility, guided by wisdom.</p>
+        </div>
     </section>
   )
 }
