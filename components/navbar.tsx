@@ -6,21 +6,14 @@ import { Menu } from "lucide-react"
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
+  const [lawOpen, setLawOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-
-  const [menuOpen, setMenuOpen] = useState(false)
-
-  const navLinks = [
-    { name: "哲學", href: "/#philosophy" },
-    { name: "服務", href: "/#services" },
-    { name: "創辦人", href: "/#founder" },
-    { name: "聯絡", href: "/contact" }
-  ]
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
@@ -34,49 +27,56 @@ export function Navbar() {
           </div>
           <h2 className="font-serif text-3xl text-[#1A1A1A] group-hover:text-[#C59D5F] transition-colors duration-500">Ronsun<span className="text-[#C59D5F]">.</span></h2>
         </Link>
-
-        {/* 桌面選單 */}
+        
         <div className="hidden md:flex items-center gap-12">
-          {navLinks.map((item) => (
-            <Link 
-              key={item.name} 
-              href={item.href} 
-              className="text-sm font-medium text-[#1A1A1A]/60 hover:text-[#1A1A1A] tracking-[0.2em] transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-px after:bg-[#C59D5F] after:transition-all hover:after:w-full"
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
-
-        {/* 手機 menu 按鈕 */}
-        <button className="md:hidden text-[#1A1A1A]" onClick={() => setMenuOpen(true)} aria-label="Open menu">
-          <Menu strokeWidth={1} />
-        </button>
-      </div>
-
-      {/* 手機側邊選單 */}
-      {menuOpen && (
-        <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex">
-          <div className="bg-[#F5F5F0] w-4/5 max-w-xs h-full shadow-xl p-8 flex flex-col gap-8 animate-slide-in-left">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-8 bg-[#1A1A1A] rounded-sm text-[#F5F5F0] flex items-center justify-center font-serif font-bold shadow-sm">R</div>
-              <span className="font-serif text-2xl text-[#1A1A1A]">Ronsun<span className="text-[#C59D5F]">.</span></span>
-            </div>
-            {navLinks.map((item) => (
+          {/* 主選單 */}
+          {[
+            { name: "wismth", href: "https://www.wismath.work", external: true },
+            { name: "大健康", href: "/wellness" },
+            { name: "ESG顧問", href: "/esg" }
+          ].map((item) => (
+            item.external ? (
+              <a
+                key={item.name}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-[#1A1A1A]/60 hover:text-[#1A1A1A] tracking-[0.2em] transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-px after:bg-[#C59D5F] after:transition-all hover:after:w-full"
+              >
+                {item.name}
+              </a>
+            ) : (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-lg font-medium text-[#1A1A1A] py-2 px-2 rounded hover:bg-[#C59D5F]/10 transition-colors"
-                onClick={() => setMenuOpen(false)}
+                className="text-sm font-medium text-[#1A1A1A]/60 hover:text-[#1A1A1A] tracking-[0.2em] transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-px after:bg-[#C59D5F] after:transition-all hover:after:w-full"
               >
                 {item.name}
               </Link>
-            ))}
-          </div>
-          {/* 點 backdrop 關閉 */}
-          <div className="flex-1" onClick={() => setMenuOpen(false)} />
+            )
+          ))}
+
+          <Link href="/legal" className="text-sm font-medium text-[#1A1A1A]/60 hover:text-[#1A1A1A] tracking-[0.2em] transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-px after:bg-[#C59D5F] after:transition-all hover:after:w-full">法律</Link>
+
+          {/* 聯絡我們按鈕 */}
+          <Link href="/contact" className="text-sm font-medium text-[#1A1A1A]/60 hover:text-[#1A1A1A] tracking-[0.2em] transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-px after:bg-[#C59D5F] after:transition-all hover:after:w-full">聯絡我們</Link>
         </div>
-      )}
+        
+        <button className="md:hidden text-[#1A1A1A]" onClick={() => setMobileOpen(!mobileOpen)}>
+          <Menu strokeWidth={1} />
+        </button>
+        {/* 手機版選單 */}
+        {mobileOpen && (
+          <div className="fixed top-0 right-0 h-full z-40 bg-[#F5F5F0]/95 backdrop-blur flex flex-col items-center pt-24 gap-8 text-lg" style={{ width: '62vw', minWidth: '280px', maxWidth: '480px' }}>
+            <a href="https://www.wismath.work" className="text-[#1A1A1A] font-medium" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>wismth</a>
+            <Link href="/wellness" className="text-[#1A1A1A] font-medium" onClick={() => setMobileOpen(false)}>大健康</Link>
+            <Link href="/esg" className="text-[#1A1A1A] font-medium" onClick={() => setMobileOpen(false)}>ESG顧問</Link>
+            <Link href="/legal" className="text-[#1A1A1A] font-medium" onClick={() => setMobileOpen(false)}>法律</Link>
+            <Link href="/contact" className="text-[#1A1A1A] font-medium" onClick={() => setMobileOpen(false)}>聯絡我們</Link>
+            <button className="absolute top-6 right-6 text-2xl text-[#1A1A1A]" onClick={() => setMobileOpen(false)}>&times;</button>
+          </div>
+        )}
+      </div>
     </nav>
   )
 }

@@ -1,7 +1,7 @@
 const footerLinks = {
   services: [
-    { name: "Wismath AI", href: "https://www.wismath.work", external: true },
-    { name: "養生貿易", href: "/wellness" },
+    { name: "wismth AI", href: "https://www.wismth.work", external: true },
+    { name: "大健康貿易", href: "/wellness" },
     { name: "ESG 顧問", href: "/esg" },
   ],
   company: [

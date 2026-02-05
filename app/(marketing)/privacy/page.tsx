@@ -82,7 +82,7 @@ export default function PrivacyPage() {
               <ul className="list-disc pl-6 space-y-2">
                 <li>AI 命理運算與分析報告產出</li>
                 <li>流日建議與年度流年分析</li>
-                <li>講師媒合服務（Wismath 平台）</li>
+                <li>講師媒合服務（wismth 平台）</li>
                 <li>帳務處理與發票開立</li>
                 <li>內部系統優化與使用者體驗改善</li>
               </ul>
@@ -97,7 +97,7 @@ export default function PrivacyPage() {
               <div>
                 <h3 className="font-bold text-lg text-[#1A1A1A] mb-3">2.1 講師端遮蔽功能</h3>
                 <p>
-                  在 Wismath 講師媒合服務中，系統提供<strong>敏感資料保護機制</strong>：
+                  在 wismth 講師媒合服務中，系統提供<strong>敏感資料保護機制</strong>：
                 </p>
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg mt-3">
                   <p className="text-blue-900">

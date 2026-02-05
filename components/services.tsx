@@ -19,9 +19,9 @@ export function Services() {
 
         {/* 服務列表 */}
         <div className="grid grid-cols-1 gap-px bg-[#1A1A1A]/10 border border-[#1A1A1A]/10">
-          {/* Wismath AI - 整個區塊可點擊 */}
+          {/* wismth AI - 整個區塊可點擊 */}
           <a 
-            href="https://www.wismath.work" 
+            href="https://www.wismth.work" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="block bg-[#F5F5F0] p-10 md:p-16 hover:bg-[#F9F9F7] transition-all duration-300 group relative overflow-hidden cursor-pointer"
@@ -35,9 +35,9 @@ export function Services() {
                 <Sparkles size={20} strokeWidth={1.5} />
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-serif text-[#1A1A1A] mb-4 group-hover:text-[#C59D5F] transition-colors">Wismath AI 智慧賦能</h3>
+                <h3 className="text-2xl font-serif text-[#1A1A1A] mb-4 group-hover:text-[#C59D5F] transition-colors">wismth AI 智慧賦能</h3>
                 <p className="text-[#1A1A1A]/85 text-sm leading-relaxed mb-8 max-w-2xl">
-                  結合古老易經邏輯與現代 AI 演算法。我們開發命理決策系統、療癒音頻「密吟」，並為企業提供高併發系統架構設計。這不只是軟體，是數位時代的智慧導航。
+                  結合古老易經邏輯與現代 AI 演算法。我們開發命理決策系統，並為企業提供高併發系統架構設計。這不只是軟體，是數位時代的智慧導航。
                 </p>
                 <span className="inline-flex items-center text-xs tracking-widest uppercase border-b border-[#1A1A1A] pb-1 group-hover:text-[#C59D5F] group-hover:border-[#C59D5F] transition-colors">
                   Explore Project <ArrowRight className="ml-2 w-3 h-3" />
@@ -54,7 +54,7 @@ export function Services() {
               className="block bg-[#F5F5F0] p-10 md:p-12 hover:bg-[#F9F9F7] transition-all duration-300 group cursor-pointer"
             >
               <Leaf className="w-8 h-8 text-[#1A1A1A]/40 mb-8 group-hover:text-[#C59D5F]/60 transition-colors" strokeWidth={1} />
-              <h3 className="text-xl font-serif text-[#1A1A1A] mb-4 group-hover:text-[#C59D5F] transition-colors">養生貿易</h3>
+              <h3 className="text-xl font-serif text-[#1A1A1A] mb-4 group-hover:text-[#C59D5F] transition-colors">大健康貿易</h3>
               <p className="text-[#1A1A1A]/85 text-sm leading-relaxed mb-8 min-h-[4rem]">
                 身體是靈魂的殿堂。嚴選瑜伽輔具、健身器材，以及來自雲南深山的頂級普洱茶，讓自然能量流動於日常。
               </p>

@@ -28,7 +28,7 @@ const notoSerifTC = Noto_Serif_TC({
 
 export const metadata: Metadata = {
   title: 'RonsunAI - Ancient Wisdom for the Soul, Future Tech for the World',
-  description: 'From AI-driven decisions to sustainable trade. RonsunAI is your vessel for balance. Wismath AI, Wellness Trade, and ESG Consulting.',
+  description: 'From AI-driven decisions to sustainable trade. RonsunAI is your vessel for balance. wismth AI, 大健康貿易, and ESG Consulting.',
   generator: 'v0.app',
 }
 
