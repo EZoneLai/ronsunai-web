@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowLeft, Orbit, Zap, Leaf, BrainCircuit, RefreshCw, Network, HeartHandshake, ArrowRight } from "lucide-react"
+import { ArrowLeft, Orbit, Zap, Leaf, BrainCircuit, RefreshCw, Network, HeartHandshake, ArrowRight, ExternalLink, Sparkles } from "lucide-react"
 import { Footer } from "@/components/footer"
 
 export default function EcosystemPage() {
@@ -154,6 +154,127 @@ export default function EcosystemPage() {
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* Extended Works Showcase (延伸作品展示) */}
+      <section className="px-6 py-24 bg-gradient-to-br from-[#F5F5F0] via-white to-[#F9F8F4]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-5 py-2 bg-[#1A1A1A] text-white rounded-full text-xs font-bold mb-6 tracking-wide shadow-lg">
+              <Sparkles className="w-4 h-4 text-[#C59D5F]" /> AI Vibe Coding 實證案例
+            </div>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">延伸作品集</h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              透過 <strong>AI Vibe Coding</strong> 技術，我們為客戶打造的數位體驗案例
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Work 1: YaoKun Space */}
+            <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 hover:shadow-xl transition-shadow group">
+              <div className="flex items-start justify-between mb-6">
+                <div>
+                  <h3 className="text-2xl font-bold mb-2 group-hover:text-[#C59D5F] transition-colors">
+                    曜寬.居 YaoKun Space
+                  </h3>
+                  <p className="text-sm text-gray-500">大健康生活美學空間</p>
+                </div>
+                <Leaf className="w-8 h-8 text-[#2D6A4F]/20" />
+              </div>
+              
+              <p className="text-gray-700 mb-6 leading-[1.8]">
+                融合<strong>茶藝、瑜珈、身心靈療癒</strong>的全方位健康空間。
+                採用 AI 輔助設計，展現現代化架構與品牌視覺呈現的專業能力。
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-[#F5F5F0] text-sm rounded-full text-gray-600">AI 輔助設計</span>
+                <span className="px-3 py-1 bg-[#F5F5F0] text-sm rounded-full text-gray-600">快速迭代</span>
+                <span className="px-3 py-1 bg-[#F5F5F0] text-sm rounded-full text-gray-600">現代化架構</span>
+              </div>
+
+              <div className="flex gap-3">
+                <a
+                  href="https://yaokun.lovable.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#1A1A1A] text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-[#C59D5F] transition-all group/btn"
+                >
+                  探索網站
+                  <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+                </a>
+                <Link
+                  href="/wellness"
+                  className="inline-flex items-center gap-2 bg-transparent border border-gray-300 text-gray-700 px-6 py-3 rounded-full text-sm font-bold hover:border-[#C59D5F] hover:text-[#C59D5F] transition-all"
+                >
+                  了解更多
+                </Link>
+              </div>
+            </div>
+
+            {/* Work 2: Web Strategy Tool */}
+            <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 hover:shadow-xl transition-shadow group">
+              <div className="flex items-start justify-between mb-6">
+                <div>
+                  <h3 className="text-2xl font-bold mb-2 group-hover:text-[#C59D5F] transition-colors">
+                    AI 網站策略架構師
+                  </h3>
+                  <p className="text-sm text-gray-500">Web Strategy Prompt Architect</p>
+                </div>
+                <BrainCircuit className="w-8 h-8 text-[#C59D5F]/20" />
+              </div>
+              
+              <p className="text-gray-700 mb-6 leading-[1.8]">
+                專為<strong>非技術背景</strong>使用者設計的 AI 工具。
+                透過視覺化介面，讓任何人都能產出專業的網站規劃藍圖。
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-[#F5F5F0] text-sm rounded-full text-gray-600">Prompt 工程</span>
+                <span className="px-3 py-1 bg-[#F5F5F0] text-sm rounded-full text-gray-600">視覺化工作流</span>
+                <span className="px-3 py-1 bg-[#F5F5F0] text-sm rounded-full text-gray-600">降維打擊</span>
+              </div>
+
+              <div className="flex gap-3">
+                <a
+                  href="https://v0-web-strategy-prompt-architect.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#1A1A1A] text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-[#C59D5F] transition-all group/btn"
+                >
+                  開啟工具
+                  <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+                </a>
+                <Link
+                  href="/ceyan"
+                  className="inline-flex items-center gap-2 bg-transparent border border-gray-300 text-gray-700 px-6 py-3 rounded-full text-sm font-bold hover:border-[#C59D5F] hover:text-[#C59D5F] transition-all"
+                >
+                  策研課程
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Banner */}
+          <div className="mt-16 bg-[#1A1A1A] rounded-[3rem] p-12 text-center text-white relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-[#C59D5F] rounded-full blur-[120px] opacity-20"></div>
+            <div className="relative z-10">
+              <h3 className="text-2xl md:text-3xl font-serif font-bold mb-4">
+                想為您的品牌打造同等級的數位體驗？
+              </h3>
+              <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+                從品牌策略、視覺設計到技術實作，我們提供一站式的 AI 賦能解決方案
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 bg-[#C59D5F] text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-[#1A1A1A] transition-all shadow-lg"
+              >
+                立即聯繫我們
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

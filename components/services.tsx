@@ -46,8 +46,23 @@ export function Services() {
             </div>
           </a>
 
-          {/* 雙欄佈局 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#1A1A1A]/10">
+          {/* 三欄佈局 */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#1A1A1A]/10">
+            {/* CEYAN - 整個區塊可點擊 */}
+            <Link 
+              href="/ceyan" 
+              className="block bg-[#F5F5F0] p-10 md:p-12 hover:bg-[#F9F9F7] transition-all duration-300 group cursor-pointer"
+            >
+              <Sparkles className="w-8 h-8 text-[#1A1A1A]/40 mb-8 group-hover:text-[#C59D5F]/60 transition-colors" strokeWidth={1} />
+              <h3 className="text-xl font-serif text-[#1A1A1A] mb-4 group-hover:text-[#C59D5F] transition-colors">策研 AI 課程</h3>
+              <p className="text-[#1A1A1A]/85 text-sm leading-relaxed mb-8 min-h-[4rem]">
+                降維打擊教學法，讓 AI 成為你能力的延伸。從命理品牌佈局到實戰導向產出，打造你的 AI 賦能戰略。
+              </p>
+              <span className="inline-flex items-center text-sm text-[#1A1A1A] font-medium group-hover:text-[#C59D5F] transition-colors">
+                探索課程 <ArrowRight className="ml-1 w-4 h-4" />
+              </span>
+            </Link>
+
             {/* Wellness - 整個區塊可點擊 */}
             <Link 
               href="/wellness" 
@@ -74,7 +89,7 @@ export function Services() {
                 企業如人，需正其骨。協助企業導入國際 ESG 標準，優化組織架構，打造具備韌性與永續力的商業體質。
               </p>
               <span className="inline-flex items-center text-sm text-[#1A1A1A] font-medium group-hover:text-[#C59D5F] transition-colors">
-                諾詢服務 <ArrowRight className="ml-1 w-4 h-4" />
+                諮詢服務 <ArrowRight className="ml-1 w-4 h-4" />
               </span>
             </Link>
           </div>

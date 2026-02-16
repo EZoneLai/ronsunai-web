@@ -1,8 +1,14 @@
 const footerLinks = {
   services: [
     { name: "wismth AI", href: "https://www.wismth.work", external: true },
+    { name: "策研 CEYAN", href: "/ceyan" },
     { name: "大健康貿易", href: "/wellness" },
     { name: "ESG 顧問", href: "/esg" },
+  ],
+  ecosystem: [
+    { name: "生態系統概覽", href: "/ecosystem" },
+    { name: "曜寬.居 YaoKun Space", href: "https://yaokun.lovable.app/", external: true },
+    { name: "AI 網站策略架構師", href: "https://v0-web-strategy-prompt-architect.vercel.app/", external: true },
   ],
   company: [
     { name: "關於創辦人", href: "/#founder" },
@@ -67,11 +73,27 @@ export function Footer() {
         </div>
 
         {/* Links Grid - 獨立一行 */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-[#F5F5F0]/10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 pb-12 border-b border-[#F5F5F0]/10">
           {/* Services Column */}
           <div className="flex flex-col gap-4">
             <h4 className="text-[#C59D5F] text-xs uppercase tracking-widest mb-2">服務</h4>
             {footerLinks.services.map((link) => (
+              <a 
+                key={link.name}
+                href={link.href} 
+                className="text-[#F5F5F0]/60 hover:text-white transition-colors text-sm"
+                target={link.external ? '_blank' : undefined}
+                rel={link.external ? 'noopener noreferrer' : undefined}
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+
+          {/* Ecosystem Column */}
+          <div className="flex flex-col gap-4">
+            <h4 className="text-[#C59D5F] text-xs uppercase tracking-widest mb-2">延伸作品</h4>
+            {footerLinks.ecosystem.map((link) => (
               <a 
                 key={link.name}
                 href={link.href} 
