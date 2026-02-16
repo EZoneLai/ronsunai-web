@@ -86,7 +86,7 @@ export default function RefundPage() {
               <div>
                 <h3 className="font-bold text-lg text-[#1A1A1A] mb-3">1.2 訂閱制取消規則</h3>
                 <p>
-                  針對 Wismath 智慧術數平台、E-Zone 數位名片訂閱服務：
+                  針對 Wismath 智慧術數平台、RSUN.ME 容晟雲端活碼訂閱服務：
                 </p>
                 <div className="space-y-3 mt-3">
                   <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">

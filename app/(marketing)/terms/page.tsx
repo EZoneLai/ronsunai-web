@@ -48,8 +48,8 @@ export default function TermsPage() {
                 <p className="text-xs text-gray-500 mt-1">wismth</p>
               </div>
               <div className="bg-[#F9F8F4] p-4 rounded-xl text-center">
-                <p className="font-bold text-[#C59D5F]">E-Zone</p>
-                <p className="text-xs text-gray-500 mt-1">電子名片</p>
+                <p className="font-bold text-[#C59D5F]">RSUN.ME</p>
+                <p className="text-xs text-gray-500 mt-1">容晟雲端活碼</p>
               </div>
               <div className="bg-[#F9F8F4] p-4 rounded-xl text-center">
                 <p className="font-bold text-[#C59D5F]">容晟嚴選</p>
@@ -65,7 +65,7 @@ export default function TermsPage() {
             <div className="space-y-4 text-base text-gray-700 leading-[1.8] pl-6">
               <p>
                 您於本公司任一平台註冊之帳號（<strong>Ronsun ID</strong>），均受本條款規範。
-                透過單一帳號，您可存取 wismth、E-Zone 及容晟嚴選等所有服務。
+                透過單一帳號，您可存取 wismth、RSUN.ME 及容晟嚴選等所有服務。
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>真實資訊：</strong>您同意提供真實、準確且完整的註冊資訊</li>
@@ -96,7 +96,7 @@ export default function TermsPage() {
                   <li>術數教學講義、工作簿、參考資料</li>
                   <li>音頻檔案（頌缽療癒、引導冥想等）</li>
                   <li>ESG 顧問報告模型、碳盤查工具</li>
-                  <li>E-Zone 電子名片版型與設計</li>
+                  <li>RSUN.ME 雲端活碼版型與設計</li>
                   <li>網站設計、圖片、Logo、視覺元素</li>
                 </ul>
               </div>
@@ -148,9 +148,9 @@ export default function TermsPage() {
               </div>
 
               <div>
-                <h3 className="font-bold text-lg text-[#1A1A1A] mb-3">3.2 E-Zone 經銷商規範</h3>
+                <h3 className="font-bold text-lg text-[#1A1A1A] mb-3">3.2 RSUN.ME 經銷商規範</h3>
                 <p>
-                  E-Zone 電子名片經銷商須遵守以下規範：
+                  RSUN.ME 容晟雲端活碼（Ronsun LiveLink™）經銷商須遵守以下規範：
                 </p>
                 <ul className="list-disc pl-6 space-y-2 mt-3">
                   <li><strong>禁止誇大宣傳：</strong>不得誇大系統功能或承諾不切實際之獲利保證</li>
