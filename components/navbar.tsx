@@ -32,6 +32,7 @@ export function Navbar() {
           {/* 主選單 */}
           {[
             { name: "wismth", href: "https://www.wismath.work", external: true },
+            { name: "策研", href: "/ceyan" },
             { name: "大健康", href: "/wellness" },
             { name: "ESG顧問", href: "/esg" }
           ].map((item) => (
@@ -69,6 +70,7 @@ export function Navbar() {
         {mobileOpen && (
           <div className="fixed top-0 right-0 h-full z-40 bg-[#F5F5F0]/95 backdrop-blur flex flex-col items-center pt-24 gap-8 text-lg" style={{ width: '62vw', minWidth: '280px', maxWidth: '480px' }}>
             <a href="https://www.wismath.work" className="text-[#1A1A1A] font-medium" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>wismth</a>
+            <Link href="/ceyan" className="text-[#1A1A1A] font-medium" onClick={() => setMobileOpen(false)}>策研</Link>
             <Link href="/wellness" className="text-[#1A1A1A] font-medium" onClick={() => setMobileOpen(false)}>大健康</Link>
             <Link href="/esg" className="text-[#1A1A1A] font-medium" onClick={() => setMobileOpen(false)}>ESG顧問</Link>
             <Link href="/legal" className="text-[#1A1A1A] font-medium" onClick={() => setMobileOpen(false)}>法律</Link>

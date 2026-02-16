@@ -388,6 +388,108 @@ export default function WellnessPage() {
         </div>
       </section>
 
+      {/* YaoKun Space Showcase (曜寬.居作品集) */}
+      <section className="px-6 py-24 bg-gradient-to-br from-[#F5F5F0] via-white to-[#F9F8F4] relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-[#C59D5F]/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#2D6A4F]/5 rounded-full blur-3xl"></div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-5 py-2 bg-[#1A1A1A] text-white rounded-full text-xs font-bold mb-6 tracking-wide shadow-lg">
+              <Sparkles className="w-4 h-4 text-[#C59D5F]" /> AI Vibe Coding 實證案例
+            </div>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+              曜寬.居 YaoKun Space
+              <br />
+              <span className="text-xl md:text-2xl mt-3 block font-light text-gray-500">
+                大健康生活美學空間
+              </span>
+            </h2>
+            <p className="text-lg md:text-xl text-gray-700 leading-[1.8] max-w-3xl mx-auto">
+              融合<strong>茶藝、瑜珈、身心靈療癒</strong>的全方位健康空間。
+              <br className="hidden md:block" />
+              這不只是我們的服務案例，更是展現 RonsunAI <strong>AI Vibe Coding 技術</strong>的實證範例。
+            </p>
+          </div>
+
+          {/* Main Content Grid */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+            {/* Left: Brand Story */}
+            <div className="space-y-6">
+              <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-[#E2E8F0] rounded-full flex items-center justify-center">
+                    <Leaf className="w-6 h-6 text-[#2D6A4F]" />
+                  </div>
+                  <h3 className="text-xl font-bold">品牌理念</h3>
+                </div>
+                <p className="text-gray-700 leading-[1.8]">
+                  曜寬.居致力於打造一個讓身心靈回歸平衡的場域。透過專業的瑜珈課程、精緻的茶藝體驗，
+                  以及深度的靈性探索，我們陪伴每一位來訪者找到屬於自己的寧靜時刻。
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-[#E2E8F0] rounded-full flex items-center justify-center">
+                    <Sparkles className="w-6 h-6 text-[#C59D5F]" />
+                  </div>
+                  <h3 className="text-xl font-bold">技術展現</h3>
+                </div>
+                <p className="text-gray-700 leading-[1.8] mb-4">
+                  本網站採用 <strong>AI Vibe Coding</strong> 技術開發，展現了 RonsunAI 在快速原型設計、
+                  品牌視覺呈現、以及使用者體驗優化上的專業能力。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-[#F5F5F0] text-sm rounded-full text-gray-600">AI 輔助設計</span>
+                  <span className="px-3 py-1 bg-[#F5F5F0] text-sm rounded-full text-gray-600">快速迭代</span>
+                  <span className="px-3 py-1 bg-[#F5F5F0] text-sm rounded-full text-gray-600">現代化架構</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Website Preview (iframe) */}
+            <div className="relative">
+              <div className="bg-white p-4 rounded-3xl shadow-xl border border-gray-200">
+                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-gray-100">
+                  <iframe
+                    src="https://yaokun.lovable.app/"
+                    className="w-full h-full"
+                    title="曜寬.居 YaoKun Space"
+                    loading="lazy"
+                  />
+                  {/* Overlay for mobile hint */}
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white text-sm text-center">
+                    互動預覽 • 點擊下方按鈕查看完整體驗
+                  </div>
+                </div>
+              </div>
+              {/* Decorative frame accent */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#C59D5F]/20 rounded-full blur-2xl -z-10"></div>
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#2D6A4F]/20 rounded-full blur-2xl -z-10"></div>
+            </div>
+          </div>
+
+          {/* CTA Button */}
+          <div className="text-center">
+            <a
+              href="https://yaokun.lovable.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-[#1A1A1A] text-white px-8 py-4 rounded-full font-bold hover:bg-[#C59D5F] transition-all shadow-lg hover:shadow-xl group"
+            >
+              探索完整網站體驗
+              <ExternalLink className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </a>
+            <p className="text-sm text-gray-500 mt-4">
+              想為您的品牌打造同等級的網站？<Link href="/contact" className="text-[#C59D5F] hover:underline font-bold">立即聯繫我們</Link>
+            </p>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   )
