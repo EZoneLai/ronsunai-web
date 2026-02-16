@@ -90,7 +90,7 @@ export default function DisclaimerPage() {
               <div>
                 <h3 className="font-bold text-lg text-[#1A1A1A] mb-3">1.2 頌缽療癒與音頻共振</h3>
                 <p>
-                  頌缽、引導冥想、密吟音頻等服務，是基於<strong>聲頻振動理論</strong>與<strong>正念練習</strong>，
+                  頌缽、引導冥想、音頻療癒等服務，是基於<strong>聲頻振動理論</strong>與<strong>正念練習</strong>，
                   目的在於：
                 </p>
                 <ul className="list-disc pl-6 space-y-2 mt-3">
@@ -222,7 +222,7 @@ export default function DisclaimerPage() {
                 </p>
                 <ul className="list-disc pl-6 space-y-2 mt-3">
                   <li>使用能量產品後，運勢、健康、財富必定改善</li>
-                  <li>聆聽密吟音頻後，一定能達到特定冥想境界</li>
+                  <li>聆聽音頻療癒後，一定能達到特定冥想境界</li>
                   <li>命理分析的預測百分之百準確</li>
                   <li>頌缽療癒能治癒特定疾病或症狀</li>
                 </ul>

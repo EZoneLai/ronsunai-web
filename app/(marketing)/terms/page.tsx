@@ -42,14 +42,10 @@ export default function TermsPage() {
             <p className="text-base text-gray-700 leading-[1.8] mb-6">
               本條款為<strong>「容晟科技有限公司」</strong>之總體規範，適用於旗下所有品牌與服務：
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
               <div className="bg-[#F9F8F4] p-4 rounded-xl text-center">
                 <p className="font-bold text-[#C59D5F]">智慧術數</p>
                 <p className="text-xs text-gray-500 mt-1">wismth</p>
-              </div>
-              <div className="bg-[#F9F8F4] p-4 rounded-xl text-center">
-                <p className="font-bold text-[#C59D5F]">密吟</p>
-                <p className="text-xs text-gray-500 mt-1">Mystic Chant</p>
               </div>
               <div className="bg-[#F9F8F4] p-4 rounded-xl text-center">
                 <p className="font-bold text-[#C59D5F]">E-Zone</p>
@@ -69,7 +65,7 @@ export default function TermsPage() {
             <div className="space-y-4 text-base text-gray-700 leading-[1.8] pl-6">
               <p>
                 您於本公司任一平台註冊之帳號（<strong>Ronsun ID</strong>），均受本條款規範。
-                透過單一帳號，您可存取 wismth、密吟、E-Zone 及容晟嚴選等所有服務。
+                透過單一帳號，您可存取 wismth、E-Zone 及容晟嚴選等所有服務。
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>真實資訊：</strong>您同意提供真實、準確且完整的註冊資訊</li>
@@ -96,7 +92,7 @@ export default function TermsPage() {
                   本公司所有數位內容，其著作權均屬<strong>容晟科技有限公司</strong>所有：
                 </p>
                 <ul className="list-disc pl-6 space-y-2 mt-3">
-                  <li>線上課程影片（Wismath 術數教學、密吟音頻課程）</li>
+                  <li>線上課程影片（Wismath 術數教學、聲頻療癒課程）</li>
                   <li>術數教學講義、工作簿、參考資料</li>
                   <li>音頻檔案（頌缽療癒、引導冥想等）</li>
                   <li>ESG 顧問報告模型、碳盤查工具</li>

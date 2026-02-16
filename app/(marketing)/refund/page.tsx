@@ -75,7 +75,7 @@ export default function RefundPage() {
                   <strong className="text-red-600">不適用七天無條件退貨</strong>：
                 </p>
                 <ul className="list-disc pl-6 space-y-2 mt-3">
-                  <li>線上課程影片（如 Wismath 術數課程、密吟音頻課程）</li>
+                  <li>線上課程影片（如 Wismath 術數課程、聲頻療癒課程）</li>
                   <li>可下載之電子書、講義、工作簿</li>
                   <li>命理報告（紫微斗數、八字分析等）</li>
                   <li>ESG 顧問服務報告（碳盤查、組織動能分析）</li>

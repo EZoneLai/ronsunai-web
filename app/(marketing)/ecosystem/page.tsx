@@ -54,7 +54,7 @@ export default function EcosystemPage() {
               <h3 className="text-xl font-bold mb-2">1. 養身 (Nourish)</h3>
               <p className="text-xs font-bold text-gray-400 uppercase mb-4">Input: Energy & Stability</p>
               <p className="text-gray-700 text-base leading-[1.8]">
-                透過<strong>憩盞茶 (Citizen Tea)</strong> 與瑜珈鍛鍊，淨化身體載體。
+                透過<strong>曜寬</strong>沖泡茶葉、焚香煮茶、每日禪修與瑜珈鍛鍊，淨化身體載體。
                 身體是靈魂的殿堂，穩定的肉身頻率是接收高維智慧的基礎。
               </p>
             </div>
@@ -67,8 +67,8 @@ export default function EcosystemPage() {
               <h3 className="text-xl font-bold mb-2 text-white">2. 修心 (Awaken)</h3>
               <p className="text-xs font-bold text-gray-400 uppercase mb-4">Process: Decision & Clarity</p>
               <p className="text-gray-300 text-base leading-[1.8]">
-                運用 <strong>Wismath AI</strong> 與 <strong>密吟 (Mystic Chant)</strong>。
-                在健康的身體基礎上，校準決策頻率。以古老術數結合數據運算，做出最符合天道的選擇。
+                運用 <strong>Wismath AI</strong> 校準決策頻率。
+                在健康的身體基礎上，以古老術數結合數據運算，做出最符合天道的選擇。
               </p>
             </div>
 
@@ -107,7 +107,7 @@ export default function EcosystemPage() {
                   <div>
                     <h3 className="font-bold text-lg">For Entrepreneurs (創業者)</h3>
                     <p className="text-base text-gray-700 mt-1 leading-[1.8]">
-                      創業感到焦慮時，喝一杯<strong>阿里山烏龍</strong>定心；使用 <strong>Wismath</strong> 分析合夥人相性；最後透過 <strong>ESG 架構</strong>設立公司制度。一站式解決身、心、業的問題。
+                      創業感到焦慮時，以<strong>普洱茶</strong>定心、焚香煮茶、每日禪修；使用 <strong>Wismath</strong> 分析合夥人相性；最後透過 <strong>ESG 架構</strong>設立公司制度。一站式解決身、心、業的問題。
                     </p>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ export default function EcosystemPage() {
                   <div>
                     <h3 className="font-bold text-lg">For Individuals (個人修行者)</h3>
                     <p className="text-base text-gray-700 mt-1 leading-[1.8]">
-                      聆聽 <strong>密吟 (Mystic Chant)</strong> 進行冥想；品味 <strong>老普洱</strong> 感受時間的厚度；在這個生態系中找到屬於自己的生命節奏。
+                      沉浸於<strong>焚香煮茶</strong>的儀式感、品味 <strong>老普洱</strong> 感受時間的厚度、透過禪修回歸內在；在這個生態系中找到屬於自己的生命節奏。
                     </p>
                   </div>
                 </div>
