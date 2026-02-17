@@ -1,7 +1,7 @@
 const footerLinks = {
   services: [
-    { name: "wismth AI", href: "https://www.wismth.work", external: true },
-    { name: "策研 CEYAN", href: "/ceyan" },
+    { name: "wismth AI", href: "https://www.wismath.work/", external: true },
+    { name: "智匯賦能", href: "/ceyan" },
     { name: "大健康貿易", href: "/wellness" },
     { name: "ESG 顧問", href: "/esg" },
   ],

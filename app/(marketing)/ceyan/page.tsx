@@ -26,37 +26,25 @@ export default function CeyanPage() {
         </div>
         
         <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 leading-tight">
-          策研 CEYAN
+          智匯賦能
           <br />
           <span className="text-2xl md:text-3xl mt-4 block font-light text-gray-500">
-            智慧賦能戰略師
+            AI 戰略實踐
           </span>
         </h1>
         
         <div className="text-lg md:text-xl text-gray-700 leading-[1.9] max-w-4xl mx-auto mb-8 space-y-3">
           <p className="font-bold text-[#C59D5F]">
-            智慧賦能 突破侷限
-          </p>
-          <p>
-            消除人類與技術間的資訊落差
-          </p>
-          <p>
-            讓 AI 成為你能力的延伸
+            「智慧，在於如何精準調度；賦能，在於如何讓技術成為資產。」
           </p>
         </div>
 
         <div className="text-base md:text-lg text-gray-600 leading-[1.9] max-w-3xl mx-auto mb-12 space-y-3">
           <p>
-            我們不教你如何管理複雜的伺服器
+            在 <strong className="text-gray-800">智匯賦能</strong> 模組中，我們不單教授 AI 工具的使用，更專注於將複雜的生成技術，轉化為具備「複利價值」的數位資產。
           </p>
           <p>
-            我們教你如何用 AI <strong className="text-gray-800">借力使力</strong>
-          </p>
-          <p>
-            策研的目標是讓你擁有一個「AI 大腦」
-          </p>
-          <p>
-            去驅動全世界現有的平台為你工作
+            這是一場關於「降維打擊」的演練：用最精簡的 Prompt 指令，驅動最強大的生產力，實現真正意義上的數位資產主權。
           </p>
         </div>
 
