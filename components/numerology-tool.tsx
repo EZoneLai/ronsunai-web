@@ -344,6 +344,28 @@ export function NumerologyTool() {
                   </div>
                 </div>
               </div>
+
+              {/* v0.dev 推薦 */}
+              <div className="mt-6 p-5 bg-gradient-to-r from-[#C59D5F]/10 to-[#C59D5F]/5 rounded-xl shadow-lg border border-[#C59D5F]/20">
+                <div className="flex items-start gap-3">
+                  <Sparkles className="w-6 h-6 flex-shrink-0 mt-0.5 text-[#C59D5F]" />
+                  <div>
+                    <h4 className="font-bold mb-2 text-gray-800">✨ v0.dev - 最優雅的 AI 網頁生成工具</h4>
+                    <p className="text-sm text-gray-700 leading-relaxed mb-3">
+                      使用推薦碼直接註冊，準備課程就能開始使用
+                    </p>
+                    <a 
+                      href="https://v0.app/ref/2XK0P7" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-white border-2 border-[#C59D5F]/30 text-[#C59D5F] px-4 py-2 rounded-lg font-bold text-sm hover:bg-[#C59D5F]/5 hover:border-[#C59D5F]/50 transition-all shadow-sm"
+                    >
+                      前往 v0.dev 註冊
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Cloudflare CTA */}
