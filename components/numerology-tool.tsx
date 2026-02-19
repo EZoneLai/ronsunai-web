@@ -347,9 +347,9 @@ export function NumerologyTool() {
             </div>
 
             {/* Cloudflare CTA */}
-            <div className="mt-6 p-5 bg-gradient-to-r from-blue-300/40 to-blue-400/40 rounded-xl shadow-lg">
+            <div className="mt-6 p-5 bg-gradient-to-r from-[#2D6A4F]/10 to-[#2D6A4F]/5 rounded-xl shadow-lg border border-[#2D6A4F]/20">
               <div className="flex items-start gap-3">
-                <Shield className="w-6 h-6 flex-shrink-0 mt-0.5 text-blue-700" />
+                <Shield className="w-6 h-6 flex-shrink-0 mt-0.5 text-[#2D6A4F]" />
                 <div>
                   <h4 className="font-bold mb-2 text-gray-800">💡 專業建議：立即使用 Cloudflare 管理你的網域</h4>
                   <p className="text-sm text-gray-700 leading-relaxed mb-3">
@@ -359,7 +359,7 @@ export function NumerologyTool() {
                     href="https://www.cloudflare.com/zh-tw/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-white border-2 border-blue-600/30 text-blue-700 px-4 py-2 rounded-lg font-bold text-sm hover:bg-blue-50 hover:border-blue-600/50 transition-all shadow-sm"
+                    className="inline-flex items-center gap-2 bg-white border-2 border-[#2D6A4F]/30 text-[#2D6A4F] px-4 py-2 rounded-lg font-bold text-sm hover:bg-[#2D6A4F]/5 hover:border-[#2D6A4F]/50 transition-all shadow-sm"
                   >
                     前往 Cloudflare 註冊
                     <ExternalLink className="w-4 h-4" />
@@ -369,9 +369,9 @@ export function NumerologyTool() {
             </div>
 
             {/* Porkbun CTA */}
-            <div className="mt-4 p-5 bg-gradient-to-r from-orange-300/40 to-orange-400/40 rounded-xl shadow-lg">
+            <div className="mt-4 p-5 bg-gradient-to-r from-[#C59D5F]/10 to-[#C59D5F]/5 rounded-xl shadow-lg border border-[#C59D5F]/20">
               <div className="flex items-start gap-3">
-                <Globe className="w-6 h-6 flex-shrink-0 mt-0.5 text-orange-700" />
+                <Globe className="w-6 h-6 flex-shrink-0 mt-0.5 text-[#C59D5F]" />
                 <div>
                   <h4 className="font-bold mb-2 text-gray-800">🐷 第二選擇：Porkbun 域名註冊商</h4>
                   <p className="text-sm text-gray-700 leading-relaxed mb-3">
@@ -381,7 +381,7 @@ export function NumerologyTool() {
                     href="https://porkbun.com/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-white border-2 border-orange-600/30 text-orange-700 px-4 py-2 rounded-lg font-bold text-sm hover:bg-orange-50 hover:border-orange-600/50 transition-all shadow-sm"
+                    className="inline-flex items-center gap-2 bg-white border-2 border-[#C59D5F]/30 text-[#C59D5F] px-4 py-2 rounded-lg font-bold text-sm hover:bg-[#C59D5F]/5 hover:border-[#C59D5F]/50 transition-all shadow-sm"
                   >
                     前往 Porkbun 註冊
                     <ExternalLink className="w-4 h-4" />
