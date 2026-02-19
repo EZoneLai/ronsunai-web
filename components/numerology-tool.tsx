@@ -359,7 +359,7 @@ export function NumerologyTool() {
                     href="https://www.cloudflare.com/zh-tw/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-blue-700 transition-all shadow-md"
+                    className="inline-flex items-center gap-2 bg-white border-2 border-blue-600/30 text-blue-700 px-4 py-2 rounded-lg font-bold text-sm hover:bg-blue-50 hover:border-blue-600/50 transition-all shadow-sm"
                   >
                     前往 Cloudflare 註冊
                     <ExternalLink className="w-4 h-4" />
@@ -381,7 +381,7 @@ export function NumerologyTool() {
                     href="https://porkbun.com/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-orange-600 text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-orange-700 transition-all shadow-md"
+                    className="inline-flex items-center gap-2 bg-white border-2 border-orange-600/30 text-orange-700 px-4 py-2 rounded-lg font-bold text-sm hover:bg-orange-50 hover:border-orange-600/50 transition-all shadow-sm"
                   >
                     前往 Porkbun 註冊
                     <ExternalLink className="w-4 h-4" />
