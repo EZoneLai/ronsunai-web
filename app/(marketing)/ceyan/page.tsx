@@ -242,6 +242,21 @@ export default function CeyanPage() {
                   </li>
                 </ul>
               </div>
+
+              <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-[#E2E8F0] rounded-full flex items-center justify-center">
+                    <Zap className="w-6 h-6 text-[#C59D5F]" />
+                  </div>
+                  <h3 className="text-xl font-bold">推薦工具</h3>
+                </div>
+                <p className="text-gray-700 leading-[1.8]">
+                  <a href="https://v0.app/ref/2XK0P7" target="_blank" rel="noopener noreferrer" className="text-[#C59D5F] hover:underline font-bold">
+                    v0.dev 最優雅的 AI 網頁生成工具 - 使用推薦碼直接註冊，準備課程就能開始使用
+                    <ExternalLink className="inline-block w-4 h-4 ml-1" />
+                  </a>
+                </p>
+              </div>
             </div>
 
             {/* Right: Tool Preview (iframe) */}
