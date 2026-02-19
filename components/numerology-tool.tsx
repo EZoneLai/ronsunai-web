@@ -1,7 +1,8 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
-import { Sparkles, TrendingUp, Shield, Search, Globe, ExternalLink, BookOpen } from "lucide-react"
+import { Sparkles, TrendingUp, Shield, Search, Globe, ExternalLink, BookOpen, Users } from "lucide-react"
+import Link from "next/link"
 import { pinyin } from "pinyin-pro"
 import { 
   analyzeBrandName, 
@@ -149,15 +150,29 @@ export function NumerologyTool() {
           </div>
         </div>
 
-        {/* Analyze Button */}
-        <button
-          onClick={handleAnalyze}
-          disabled={!brandName.trim()}
-          className="w-full bg-gradient-to-r from-[#C59D5F] to-[#2D6A4F] text-white px-8 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3 group"
-        >
-          <Search className="w-6 h-6 group-hover:scale-110 transition-transform" />
-          開始診斷命理數字
-        </button>
+        <div className="text-center mb-6">
+          <p className="text-gray-600">你可能需要協助取名？我們的專家提供專業命名服務。</p>
+        </div>
+
+        {/* Action Buttons */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <button
+            onClick={handleAnalyze}
+            disabled={!brandName.trim()}
+            className="w-full bg-gradient-to-r from-[#C59D5F] to-[#2D6A4F] text-white px-8 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3 group"
+          >
+            <Search className="w-6 h-6 group-hover:scale-110 transition-transform" />
+            開始診斷命理數字
+          </button>
+          
+          <Link
+            href="/contact"
+            className="w-full bg-gray-100 text-gray-800 px-8 py-5 rounded-2xl font-bold text-lg hover:bg-gray-200/60 hover:border-[#C59D5F] transition-all flex items-center justify-center gap-3 group"
+          >
+            <Users className="w-6 h-6 text-[#C59D5F]" />
+            諮詢命名服務
+          </Link>
+        </div>
       </div>
 
       {/* Result Section */}
@@ -341,28 +356,6 @@ export function NumerologyTool() {
                       <p className="text-green-700">✓ 強制 HTTPS，安全性高</p>
                       <p className="text-red-600">✗ 認知度較低，需要用戶教育</p>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* v0.dev 推薦 */}
-              <div className="mt-6 p-5 bg-gradient-to-r from-[#C59D5F]/10 to-[#C59D5F]/5 rounded-xl shadow-lg border border-[#C59D5F]/20">
-                <div className="flex items-start gap-3">
-                  <Sparkles className="w-6 h-6 flex-shrink-0 mt-0.5 text-[#C59D5F]" />
-                  <div>
-                    <h4 className="font-bold mb-2 text-gray-800">✨ v0.dev - 最優雅的 AI 網頁生成工具</h4>
-                    <p className="text-sm text-gray-700 leading-relaxed mb-3">
-                      使用推薦碼直接註冊，準備課程就能開始使用
-                    </p>
-                    <a 
-                      href="https://v0.app/ref/2XK0P7" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-white border-2 border-[#C59D5F]/30 text-[#C59D5F] px-4 py-2 rounded-lg font-bold text-sm hover:bg-[#C59D5F]/5 hover:border-[#C59D5F]/50 transition-all shadow-sm"
-                    >
-                      前往 v0.dev 註冊
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
                   </div>
                 </div>
               </div>

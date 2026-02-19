@@ -187,17 +187,12 @@ export default function CeyanPage() {
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
               Web Strategy Prompt Architect
               <br />
-              <span className="text-xl md:text-2xl mt-3 block font-light text-gray-500">
-                提示詞工程師的最佳幫手
+              <span className="text-2xl md:text-4xl mt-3 block font-light text-gray-800">
+                提示詞生成器。工程師的最佳幫手
               </span>
             </h2>
-            <p className="text-lg md:text-xl text-gray-700 leading-[1.8] max-w-3xl mx-auto">
-              運用 <strong>v0.dev</strong> 技術打造的專業提示詞架構工具。
-              <br className="hidden md:block" />
-              協助你用 AI 快速建立高品質的網站策略與內容架構。
-            </p>
           </div>
-
+          
           {/* Main Content Grid */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
             {/* Left: Tool Description */}
@@ -243,20 +238,6 @@ export default function CeyanPage() {
                 </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-[#E2E8F0] rounded-full flex items-center justify-center">
-                    <Zap className="w-6 h-6 text-[#C59D5F]" />
-                  </div>
-                  <h3 className="text-xl font-bold">推薦工具</h3>
-                </div>
-                <p className="text-gray-700 leading-[1.8]">
-                  <a href="https://v0.app/ref/2XK0P7" target="_blank" rel="noopener noreferrer" className="text-[#C59D5F] hover:underline font-bold">
-                    v0.dev 最優雅的 AI 網頁生成工具 - 使用推薦碼直接註冊，準備課程就能開始使用
-                    <ExternalLink className="inline-block w-4 h-4 ml-1" />
-                  </a>
-                </p>
-              </div>
             </div>
 
             {/* Right: Tool Preview (iframe) */}
@@ -289,12 +270,39 @@ export default function CeyanPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#1A1A1A] text-white px-8 py-4 rounded-full font-bold hover:bg-[#C59D5F] transition-all shadow-lg hover:shadow-xl group"
             >
-              開啟完整工具體驗
+              開啟提示詞工具體驗
               <ExternalLink className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
             <p className="text-sm text-gray-500 mt-4">
               想了解更多 AI Vibe Coding 應用？<Link href="/contact" className="text-[#C59D5F] hover:underline font-bold">立即聯繫我們</Link>
             </p>
+          </div>
+
+          {/* Enhanced Recommendation Card */}
+          <div className="max-w-3xl mx-auto mt-20">
+            <div className="bg-white p-8 rounded-3xl shadow-lg border-2 border-[#C59D5F]/30">
+              <div className="flex items-center gap-4 mb-5">
+                <div className="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center">
+                  <Zap className="w-7 h-7 text-[#C59D5F]" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold">站長推薦：Vibe Coding 生成工具</h3>
+                  <p className="text-base text-gray-500">一個好的工具，能讓你的創意事半功倍</p>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-[1.8] mb-6 pl-1">
+                這是一個運用 <strong>v0.dev</strong> 技術打造的專業提示詞架構工具，能協助你用 AI 快速建立高品質的網站策略與內容架構。
+              </p>
+              <div className="bg-gray-50/80 p-6 rounded-2xl border border-gray-200/80">
+                <a href="https://v0.app/ref/2XK0P7" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between">
+                  <div>
+                    <p className="text-xl font-bold text-[#1A1A1A] group-hover:text-[#C59D5F] transition-colors">v0.dev 最優雅的 AI 網頁生成工具</p>
+                    <p className="text-base text-gray-600 mt-1">使用推薦碼直接註冊，準備課程就能開始使用</p>
+                  </div>
+                  <ExternalLink className="w-9 h-9 text-gray-300 group-hover:text-[#C59D5F] transition-all duration-300 group-hover:scale-110 -rotate-12 group-hover:rotate-0" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
