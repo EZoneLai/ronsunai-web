@@ -264,6 +264,8 @@ export function NumerologyTool() {
           </div>
 
           {/* English Name & Domain Suggestions */}
+          {/* 英文域名建議區塊：使用 pinyin-pro 自動將中文品牌名轉換為拼音，方便用戶直接購買 DNS */}
+          {/* 更新日期：2026-02-19 - 整合自動拼音轉換功能，消除手動輸入錯誤 */}
           <div className="mt-8 bg-gradient-to-r from-[#2D6A4F]/5 to-[#C59D5F]/5 rounded-2xl p-8 border border-[#C59D5F]/20">
             <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
               <Globe className="w-6 h-6 text-[#2D6A4F]" />
@@ -272,6 +274,7 @@ export function NumerologyTool() {
             
             <div className={`grid ${result.isEnglish ? 'md:grid-cols-1' : 'md:grid-cols-2'} gap-6`}>
               {/* Pinyin Section - 僅中文顯示 */}
+              {/* 使用 pinyin-pro 套件自動轉換中文為拼音，toneType: 'none' 移除聲調標記 */}
               {!result.isEnglish && (
               <div>
                 <div className="text-sm text-gray-500 mb-2 font-bold uppercase tracking-wide">拼音建議</div>
@@ -279,12 +282,14 @@ export function NumerologyTool() {
                   <div className="bg-white p-4 rounded-xl border border-gray-200">
                     <div className="text-xs text-gray-500 mb-1">漢語拼音</div>
                     <div className="text-lg font-bold text-gray-800">
+                      {/* 轉換為帶空格的拼音，方便閱讀 */}
                       {pinyin(result.brandName, { toneType: 'none' })}
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded-xl border border-gray-200">
                     <div className="text-xs text-gray-500 mb-1">英文域名建議（可直接用於購買 DNS）</div>
                     <div className="text-lg font-bold text-[#C59D5F]">
+                      {/* 移除空格，產生可直接註冊的域名格式 */}
                       {pinyin(result.brandName, { toneType: 'none' }).replace(/\s/g, '')}
                     </div>
                   </div>
@@ -292,10 +297,14 @@ export function NumerologyTool() {
               </div>
               )}
 
-              {/* Domain Extensions */}
+              {/* Domain Extensions - 網域後綴推薦 */}
+              {/* 更新日期：2026-02-19 - 從 .ai/.com/.tw 改為 .com/.tw/.app */}
+              {/* 變更原因：.com 更符合商業標準，.app 更適合科技品牌，移除 .ai 高價後綴 */}
+              {/* 新增優缺點說明：幫助用戶快速了解各後綴的適用場景 */}
               <div>
                 <div className="text-sm text-gray-500 mb-2 font-bold uppercase tracking-wide">推薦網域後綴</div>
                 <div className="space-y-3">
+                  {/* .com - 商業標準，全球認可度最高 */}
                   <div className="p-4 bg-white rounded-xl border-2 border-[#C59D5F]">
                     <div className="flex items-baseline gap-2 mb-2">
                       <span className="font-bold text-xl">.com</span>
@@ -308,6 +317,7 @@ export function NumerologyTool() {
                     </div>
                   </div>
 
+                  {/* .tw - 台灣本土品牌，在地化優勢 */}
                   <div className="p-4 bg-white rounded-xl border border-gray-200">
                     <div className="flex items-baseline gap-2 mb-2">
                       <span className="font-bold text-xl">.tw</span>
@@ -320,6 +330,7 @@ export function NumerologyTool() {
                     </div>
                   </div>
 
+                  {/* .app - 現代科技品牌，強制 HTTPS 安全性高 */}
                   <div className="p-4 bg-white rounded-xl border border-gray-200">
                     <div className="flex items-baseline gap-2 mb-2">
                       <span className="font-bold text-xl">.app</span>
