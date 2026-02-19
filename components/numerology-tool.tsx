@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react"
 import { Sparkles, TrendingUp, Shield, Search, Globe, ExternalLink, BookOpen } from "lucide-react"
+import { pinyin } from "pinyin-pro"
 import { 
   analyzeBrandName, 
   CORPORATE_OFFSETS,
@@ -278,67 +279,13 @@ export function NumerologyTool() {
                   <div className="bg-white p-4 rounded-xl border border-gray-200">
                     <div className="text-xs text-gray-500 mb-1">漢語拼音</div>
                     <div className="text-lg font-bold text-gray-800">
-                      {result.brandName.split('').map(char => {
-                        // 擴充的拼音對照表
-                        const pinyinMap: Record<string, string> = {
-                          '策': 'ce', '研': 'yan', '容': 'rong', '晟': 'sheng',
-                          '科': 'ke', '技': 'ji', '曜': 'yao', '寬': 'kuan',
-                          '居': 'ju', '智': 'zhi', '慧': 'hui', '數': 'shu',
-                          '位': 'wei', '主': 'zhu', '權': 'quan', '密': 'mi',
-                          '吟': 'yin', '秘': 'mi', '寶': 'bao', '寧': 'ning',
-                          '宇': 'yu', '宙': 'zhou', '宏': 'hong', '宗': 'zong',
-                          '宜': 'yi', '宸': 'chen', '家': 'jia', '富': 'fu',
-                          '實': 'shi', '能': 'neng', '學': 'xue', '習': 'xi',
-                          '算': 'suan', '法': 'fa', '程': 'cheng', '式': 'shi',
-                          '碼': 'ma', '網': 'wang', '絡': 'luo', '系': 'xi',
-                          '統': 'tong', '資': 'zi', '料': 'liao', '據': 'ju',
-                          '庫': 'ku', '雲': 'yun', '端': 'duan', '器': 'qi',
-                          '服': 'fu', '務': 'wu', '平': 'ping', '台': 'tai',
-                          '應': 'ying', '用': 'yong', '創': 'chuang', '新': 'xin',
-                          '源': 'yuan', '通': 'tong', '達': 'da', '聯': 'lian',
-                          '盟': 'meng', '邦': 'bang', '國': 'guo', '際': 'ji',
-                          '集': 'ji', '團': 'tuan', '業': 'ye', '企': 'qi',
-                          '商': 'shang', '貿': 'mao', '易': 'yi', '投': 'tou',
-                          '產': 'chan', '開': 'kai', '拓': 'tuo', '展': 'zhan',
-                          '建': 'jian', '設': 'she', '築': 'zhu', '美': 'mei',
-                          '好': 'hao', '優': 'you', '質': 'zhi', '品': 'pin',
-                          '精': 'jing', '細': 'xi', '緻': 'zhi',
-                        }
-                        return pinyinMap[char] || char.toLowerCase()
-                      }).join('')}
+                      {pinyin(result.brandName, { toneType: 'none' })}
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded-xl border border-gray-200">
-                    <div className="text-xs text-gray-500 mb-1">建議網域名稱</div>
+                    <div className="text-xs text-gray-500 mb-1">英文域名建議（可直接用於購買 DNS）</div>
                     <div className="text-lg font-bold text-[#C59D5F]">
-                      {result.brandName.split('').map(char => {
-                        // 簡化版英文域名建議（移除聲調，簡化拼寫）
-                        const simpleMap: Record<string, string> = {
-                          '策': 'ce', '研': 'yan', '容': 'ron', '晟': 'sun',
-                          '科': 'k', '技': 'i', '曜': 'yao', '寬': 'kun',
-                          '居': 'ju', '智': 'zhi', '慧': 'hui', '數': 'shu',
-                          '位': 'w', '主': 'z', '權': 'quan', '密': 'mi',
-                          '吟': 'yin', '秘': 'mi', '寶': 'bao', '寧': 'ning',
-                          '宇': 'yu', '宙': 'zhou', '宏': 'hong', '宗': 'zong',
-                          '宜': 'yi', '宸': 'chen', '家': 'jia', '富': 'fu',
-                          '實': 'shi', '能': 'neng', '學': 'xue', '習': 'xi',
-                          '算': 'suan', '法': 'fa', '程': 'cheng', '式': 'shi',
-                          '碼': 'ma', '網': 'wang', '絡': 'luo', '系': 'xi',
-                          '統': 'tong', '資': 'zi', '料': 'liao', '據': 'ju',
-                          '庫': 'ku', '雲': 'yun', '端': 'duan', '器': 'qi',
-                          '服': 'fu', '務': 'wu', '平': 'ping', '台': 'tai',
-                          '應': 'ying', '用': 'yong', '創': 'chuang', '新': 'xin',
-                          '源': 'yuan', '通': 'tong', '達': 'da', '聯': 'lian',
-                          '盟': 'meng', '邦': 'bang', '國': 'guo', '際': 'ji',
-                          '集': 'ji', '團': 'tuan', '業': 'ye', '企': 'qi',
-                          '商': 'shang', '貿': 'mao', '易': 'yi', '投': 'tou',
-                          '產': 'chan', '開': 'kai', '拓': 'tuo', '展': 'zhan',
-                          '建': 'jian', '設': 'she', '築': 'zhu', '美': 'mei',
-                          '好': 'hao', '優': 'you', '質': 'zhi', '品': 'pin',
-                          '精': 'jing', '細': 'xi', '緻': 'zhi',
-                        }
-                        return simpleMap[char] || char.toLowerCase()
-                      }).join('')}
+                      {pinyin(result.brandName, { toneType: 'none' }).replace(/\s/g, '')}
                     </div>
                   </div>
                 </div>
@@ -348,34 +295,40 @@ export function NumerologyTool() {
               {/* Domain Extensions */}
               <div>
                 <div className="text-sm text-gray-500 mb-2 font-bold uppercase tracking-wide">推薦網域後綴</div>
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between p-4 bg-white rounded-xl border-2 border-[#C59D5F]">
-                    <div>
-                      <span className="font-bold text-lg">.ai</span>
-                      <p className="text-xs text-gray-600">AI 品牌首選</p>
+                <div className="space-y-3">
+                  <div className="p-4 bg-white rounded-xl border-2 border-[#C59D5F]">
+                    <div className="flex items-baseline gap-2 mb-2">
+                      <span className="font-bold text-xl">.com</span>
+                      <span className="text-xs text-gray-500">商業標準配置</span>
                     </div>
-                    <div className="px-3 py-1 bg-[#C59D5F] text-white text-xs font-bold rounded-full">
-                      推薦
-                    </div>
-                  </div>
-
-                  <div className="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-200">
-                    <div>
-                      <span className="font-bold text-lg">.com</span>
-                      <p className="text-xs text-gray-600">商業標準配置</p>
-                    </div>
-                    <div className="px-3 py-1 bg-[#2D6A4F] text-white text-xs font-bold rounded-full">
-                      必備
+                    <div className="text-xs space-y-1">
+                      <p className="text-green-700">✓ 全球認可度最高，專業形象</p>
+                      <p className="text-green-700">✓ 容易記憶，客戶信任度高</p>
+                      <p className="text-red-600">✗ 好名稱搶手，可能已被註冊</p>
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-200">
-                    <div>
-                      <span className="font-bold text-lg">.tw</span>
-                      <p className="text-xs text-gray-600">台灣在地品牌</p>
+                  <div className="p-4 bg-white rounded-xl border border-gray-200">
+                    <div className="flex items-baseline gap-2 mb-2">
+                      <span className="font-bold text-xl">.tw</span>
+                      <span className="text-xs text-gray-500">台灣在地品牌</span>
                     </div>
-                    <div className="px-3 py-1 bg-gray-200 text-gray-700 text-xs font-bold rounded-full">
-                      選配
+                    <div className="text-xs space-y-1">
+                      <p className="text-green-700">✓ 強調台灣本土，在地認同感</p>
+                      <p className="text-green-700">✓ 可用性較高，容易註冊成功</p>
+                      <p className="text-red-600">✗ 國際市場辨識度較低</p>
+                    </div>
+                  </div>
+
+                  <div className="p-4 bg-white rounded-xl border border-gray-200">
+                    <div className="flex items-baseline gap-2 mb-2">
+                      <span className="font-bold text-xl">.app</span>
+                      <span className="text-xs text-gray-500">現代科技感</span>
+                    </div>
+                    <div className="text-xs space-y-1">
+                      <p className="text-green-700">✓ 科技品牌專屬，創新形象</p>
+                      <p className="text-green-700">✓ 強制 HTTPS，安全性高</p>
+                      <p className="text-red-600">✗ 認知度較低，需要用戶教育</p>
                     </div>
                   </div>
                 </div>
@@ -383,21 +336,43 @@ export function NumerologyTool() {
             </div>
 
             {/* Cloudflare CTA */}
-            <div className="mt-6 p-5 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl shadow-lg">
+            <div className="mt-6 p-5 bg-gradient-to-r from-blue-300/40 to-blue-400/40 rounded-xl shadow-lg">
               <div className="flex items-start gap-3">
-                <Shield className="w-6 h-6 flex-shrink-0 mt-0.5" />
+                <Shield className="w-6 h-6 flex-shrink-0 mt-0.5 text-blue-700" />
                 <div>
-                  <h4 className="font-bold mb-2">💡 專業建議：立即使用 Cloudflare 管理你的網域</h4>
-                  <p className="text-sm text-blue-50 leading-relaxed mb-3">
+                  <h4 className="font-bold mb-2 text-gray-800">💡 專業建議：立即使用 Cloudflare 管理你的網域</h4>
+                  <p className="text-sm text-gray-700 leading-relaxed mb-3">
                     開啟 WAF 防護 + 隱藏原始 IP，有效防止 DDoS 攻擊。年費僅 300-400 元，十年省下 12000+ 元。
                   </p>
                   <a 
                     href="https://www.cloudflare.com/zh-tw/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-white text-blue-600 px-4 py-2 rounded-lg font-bold text-sm hover:bg-blue-50 transition-all"
+                    className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-blue-700 transition-all shadow-md"
                   >
                     前往 Cloudflare 註冊
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Porkbun CTA */}
+            <div className="mt-4 p-5 bg-gradient-to-r from-orange-300/40 to-orange-400/40 rounded-xl shadow-lg">
+              <div className="flex items-start gap-3">
+                <Globe className="w-6 h-6 flex-shrink-0 mt-0.5 text-orange-700" />
+                <div>
+                  <h4 className="font-bold mb-2 text-gray-800">🐷 第二選擇：Porkbun 域名註冊商</h4>
+                  <p className="text-sm text-gray-700 leading-relaxed mb-3">
+                    價格實惠的域名註冊服務，提供免費 WHOIS 隱私保護和 SSL 憑證，適合追求性價比的使用者。
+                  </p>
+                  <a 
+                    href="https://porkbun.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-orange-600 text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-orange-700 transition-all shadow-md"
+                  >
+                    前往 Porkbun 註冊
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 </div>
