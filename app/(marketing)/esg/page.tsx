@@ -280,10 +280,10 @@ export default function EsgPage() {
               <Briefcase className="w-4 h-4 text-[#C59D5F]" /> 合作夥伴作品展示
             </div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-              ESG 策略顧問 許耀云
+              ESG 策略顧問團隊
               <br />
               <span className="text-xl md:text-2xl mt-3 block font-light text-gray-500">
-                電子名片展示
+                專業電子名片展示
               </span>
             </h2>
             <p className="text-lg md:text-xl text-gray-700 leading-[1.8] max-w-3xl mx-auto">
@@ -291,34 +291,74 @@ export default function EsgPage() {
             </p>
           </div>
 
-          {/* Main Content: Iframe */}
-          <div className="relative max-w-sm mx-auto">
-            <div className="bg-white p-4 rounded-3xl shadow-xl border border-gray-200">
-              <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gray-100">
-                <iframe
-                  src="https://v0-yao-yun.vercel.app/"
-                  className="w-full h-full"
-                  title="ESG 策略顧問 許耀云 電子名片展示"
-                  loading="lazy"
-                />
+          {/* Main Content: Grid of Partner Cards */}
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            {/* Partner 1: 許耀云 */}
+            <div className="relative">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-[#1A1A1A] mb-2">許耀云</h3>
+                <p className="text-sm text-gray-600">ESG 策略顧問</p>
               </div>
+              <div className="bg-white p-4 rounded-3xl shadow-xl border border-gray-200">
+                <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gray-100">
+                  <iframe
+                    src="https://v0-yao-yun.vercel.app/"
+                    className="w-full h-full"
+                    title="ESG 策略顧問 許耀云 電子名片展示"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div className="text-center mt-6">
+                <a
+                  href="https://v0-yao-yun.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#1A1A1A] text-white px-6 py-3 rounded-full font-bold hover:bg-[#C59D5F] transition-all shadow-lg hover:shadow-xl group text-sm"
+                >
+                  開啟完整電子名片
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#C59D5F]/20 rounded-full blur-2xl -z-10"></div>
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#2D6A4F]/20 rounded-full blur-2xl -z-10"></div>
             </div>
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#C59D5F]/20 rounded-full blur-2xl -z-10"></div>
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#2D6A4F]/20 rounded-full blur-2xl -z-10"></div>
+
+            {/* Partner 2: Raine */}
+            <div className="relative">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-[#1A1A1A] mb-2">Raine</h3>
+                <p className="text-sm text-gray-600">ESG 策略顧問</p>
+              </div>
+              <div className="bg-white p-4 rounded-3xl shadow-xl border border-gray-200">
+                <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gray-100">
+                  <iframe
+                    src="https://raine-jane-shen.github.io/Raine-Jane-Shenghp.github.io/"
+                    className="w-full h-full"
+                    title="ESG 策略顧問 Raine 電子名片展示"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div className="text-center mt-6">
+                <a
+                  href="https://raine-jane-shen.github.io/Raine-Jane-Shenghp.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#1A1A1A] text-white px-6 py-3 rounded-full font-bold hover:bg-[#C59D5F] transition-all shadow-lg hover:shadow-xl group text-sm"
+                >
+                  開啟完整電子名片
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#2D6A4F]/20 rounded-full blur-2xl -z-10"></div>
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#C59D5F]/20 rounded-full blur-2xl -z-10"></div>
+            </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="text-center mt-12">
-            <a
-              href="https://v0-yao-yun.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-[#1A1A1A] text-white px-8 py-4 rounded-full font-bold hover:bg-[#C59D5F] transition-all shadow-lg hover:shadow-xl group"
-            >
-              開啟完整電子名片
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <p className="text-sm text-gray-500 mt-4">
+          {/* CTA Section */}
+          <div className="text-center mt-16">
+            <p className="text-sm text-gray-500">
               需要為您的團隊打造專業的數位工具嗎？ <Link href="/contact" className="text-[#C59D5F] hover:underline font-bold">立即聯繫我們</Link>
             </p>
           </div>
